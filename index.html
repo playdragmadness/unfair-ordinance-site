@@ -497,6 +497,7 @@
             <textarea id="body"></textarea>
             <div class="actions">
               <button class="button primary" id="sendBtn" type="button" disabled>Open in email app</button>
+              <button class="button blue" id="gmailBtn" type="button" disabled>Open in Gmail</button>
               <button class="button light" id="copyRecipientsBtn" type="button">Copy recipients</button>
               <button class="button light" id="copyBtn" type="button">Copy message</button>
             </div>
@@ -546,34 +547,23 @@
     ];
     const wardEmails = {
       1: "info@the1stward.com", 3: "Ward03@cityofchicago.org", 4: "Ward04@cityofchicago.org",
-      7: "Alderman@gregmitchell7thward.org", 8: "Ward08@cityofchicago.org", 13: "Ward13@cityofchicago.org",
-      17: "David.Moore@cityofchicago.org", 20: "Jeanette.Taylor@cityofchicago.org", 23: "Ward23@cityofchicago.org",
-      25: "Ward25@cityofchicago.org", 27: "Ward27@cityofchicago.org", 33: "Info@33rdward.org",
+      7: "Alderman@gregmitchell7thward.org", 8: "Ward08@cityofchicago.org", 11: "ward11@cityofchicago.org",
+      13: "Ward13@cityofchicago.org", 17: "David.Moore@cityofchicago.org", 19: "Ward19@cityofchicago.org",
+      20: "Jeanette.Taylor@cityofchicago.org", 23: "Ward23@cityofchicago.org", 25: "Ward25@cityofchicago.org",
+      27: "Ward27@cityofchicago.org", 32: "Ward32@cityofchicago.org", 33: "Info@33rdward.org",
       35: "Ward35@cityofchicago.org", 36: "Ward36@cityofchicago.org", 37: "Ward37@cityofchicago.org",
-      46: "info@46thward.com", 48: "info@the48thward.org", 49: "Office@49thward.org"
+      39: "Ward39@cityofchicago.org", 40: "Info@40thward.org", 46: "info@46thward.com",
+      48: "info@the48thward.org", 49: "Office@49thward.org"
     };
     const emailForWard = ward => wardEmails[ward] || `ward${String(ward).padStart(2, "0")}@cityofchicago.org`;
-    const committeeRecipients = [
-      { ward: 25, name: "Byron Sigcho-Lopez" },
-      { ward: 7, name: "Gregory Mitchell" },
-      { ward: 27, name: "Walter Burnett" },
-      { ward: 46, name: "Angela Clay" },
-      { ward: 3, name: "Pat Dowell" },
-      { ward: 26, name: "Jessica Fuentes" },
-      { ward: 49, name: "Maria Hadden" },
-      { ward: 8, name: "Michelle Harris" },
-      { ward: 1, name: "Daniel La Spata" },
-      { ward: 48, name: "Leni Manaa-Hoppenworth" },
-      { ward: 37, name: "Emma Mitts" },
-      { ward: 17, name: "David Moore" },
+    const sponsorRecipients = [
+      { ward: 11, name: "Nicole Lee" },
+      { ward: 39, name: "Samantha Nugent" },
+      { ward: 36, name: "Gilbert Villegas" },
+      { ward: 32, name: "Scott Waguespack" },
       { ward: 13, name: "Marty Quinn" },
-      { ward: 35, name: "Carlos Ramirez-Rosa" },
-      { ward: 4, name: "Lamont Robinson" },
-      { ward: 33, name: "Rossana Rodriguez Sanchez" },
-      { ward: 24, name: "Monique Scott" },
-      { ward: 23, name: "Silvana Tabares" },
-      { ward: 20, name: "Jeanette Taylor" },
-      { ward: 36, name: "Gilbert Villegas" }
+      { ward: 19, name: "Matt O'Shea" },
+      { ward: 40, name: "Andre Vasquez Jr." }
     ];
     const mayorEmail = "letterforthemayor@cityofchicago.org";
     const wardSelect = document.querySelector("#ward");
@@ -612,6 +602,7 @@
     const toEmails = document.querySelector("#toEmails");
     const ccEmails = document.querySelector("#ccEmails");
     const sendBtn = document.querySelector("#sendBtn");
+    const gmailBtn = document.querySelector("#gmailBtn");
     const sendNote = document.querySelector("#sendNote");
     let bodyEdited = false;
     let subjectEdited = false;
@@ -646,7 +637,7 @@
       const alder = byWard[ward];
       const to = uniqueEmails([
         ...(alder ? [alder.email] : []),
-        ...committeeRecipients,
+        ...sponsorRecipients,
       ]);
       const cc = uniqueEmails([mayorEmail]);
       return { to, cc };
@@ -682,7 +673,7 @@
       const alder = byWard[ward];
       const recipients = recipientLists();
       if (alder) {
-        toBlock.innerHTML = `<b>To:</b> your alderperson and the current Housing and Real Estate Committee members.<br><b>Cc:</b> Mayor Brandon Johnson.`;
+        toBlock.innerHTML = `<b>To:</b> your alderperson and the listed legislation sponsors.<br><b>Cc:</b> Mayor Brandon Johnson.`;
       } else {
         toBlock.textContent = "Choose your ward to include your own alderperson in the recipient list.";
       }
@@ -691,6 +682,7 @@
       if (ward && !subjectEdited) subject.value = draftSubject(ward);
       if (!bodyEdited) body.value = draftBody();
       sendBtn.disabled = !ready();
+      gmailBtn.disabled = !ready();
       sendNote.textContent = ready()
         ? "Ready. This opens a draft in your own email app; you review and send it yourself."
         : "Fill in your ward, name, and at least one identity checkbox to enable the email link.";
@@ -705,6 +697,22 @@
       const recipients = recipientLists();
       const params = new URLSearchParams({ cc: recipients.cc.join(","), subject: subject.value, body: body.value });
       window.location.href = `mailto:${recipients.to.map(email => encodeURIComponent(email)).join(",")}?${params.toString().replace(/\+/g, "%20")}`;
+    });
+    gmailBtn.addEventListener("click", () => {
+      if (!ready()) return;
+      const recipients = recipientLists();
+      const gmailUrl = new URL("https://mail.google.com/mail/");
+      gmailUrl.search = new URLSearchParams({
+        view: "cm",
+        fs: "1",
+        tf: "1",
+        to: recipients.to.join(","),
+        cc: recipients.cc.join(","),
+        su: subject.value,
+        body: body.value
+      });
+      const opened = window.open(gmailUrl.toString(), "_blank", "noopener,noreferrer");
+      if (!opened) window.location.href = gmailUrl.toString();
     });
     document.querySelector("#copyRecipientsBtn").addEventListener("click", async () => {
       const recipients = recipientLists();
