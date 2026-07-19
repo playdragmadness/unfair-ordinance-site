@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Editable Canva version of the Unfair Ordinance social graphic</title>
+  <desc id="desc">A Canva-friendly version with separate text, shapes, lines, diamonds, badges, and action button elements.</desc>
+
+  <rect id="background" width="1080" height="1350" fill="#f8f3e7"/>
+  <rect id="hero-background" width="1080" height="480" fill="#0a1f33"/>
+  <g id="hero-pinstripes" fill="#ffffff" opacity=".07">
+    <rect x="72" width="1" height="480"/><rect x="144" width="1" height="480"/><rect x="216" width="1" height="480"/><rect x="288" width="1" height="480"/><rect x="360" width="1" height="480"/><rect x="432" width="1" height="480"/><rect x="504" width="1" height="480"/><rect x="576" width="1" height="480"/><rect x="648" width="1" height="480"/><rect x="720" width="1" height="480"/><rect x="792" width="1" height="480"/><rect x="864" width="1" height="480"/><rect x="936" width="1" height="480"/><rect x="1008" width="1" height="480"/>
+  </g>
+  <rect id="cyan-divider" y="480" width="1080" height="12" fill="#43b4e8"/>
+
+  <g id="brand">
+    <rect id="flag-white" x="60" y="36" width="82" height="50" fill="#fffdf8" stroke="#ffffff" stroke-width="2"/>
+    <rect id="flag-blue" x="60" y="53" width="82" height="16" fill="#43b4e8"/>
+    <polygon id="flag-diamond-1" points="73,61 80,54 87,61 80,68" fill="#d72638"/>
+    <polygon id="flag-diamond-2" points="87,61 94,54 101,61 94,68" fill="#d72638"/>
+    <polygon id="flag-diamond-3" points="101,61 108,54 115,61 108,68" fill="#d72638"/>
+    <polygon id="flag-diamond-4" points="115,61 122,54 129,61 122,68" fill="#d72638"/>
+    <text id="brand-name" x="162" y="69" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" letter-spacing="1.5">UNFAIR ORDINANCE</text>
+  </g>
+
+  <g id="headline" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="900">
+    <text id="headline-1" x="60" y="126" fill="#ffffff">THE SO-CALLED</text>
+    <text id="headline-1-fair" x="454" y="126" fill="#ff6472">FAIR</text>
+    <text id="headline-2-ordinance" x="60" y="188" fill="#ff6472">ORDINANCE</text>
+    <text id="headline-2-is-an" x="357" y="188" fill="#ffffff">IS AN</text>
+    <text id="headline-3" x="60" y="250" fill="#ffffff">UNFAIR ROLLBACK</text>
+    <text id="headline-3-renters" x="560" y="250" fill="#ff6472">FOR RENTERS.</text>
+  </g>
+  <g id="subtitle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="650" fill="#d8e6f0">
+    <text id="subtitle-line-1" x="60" y="342">A proposed law called the “FAIR Ordinance” would roll back</text>
+    <text id="subtitle-line-2" x="60" y="373">renter protections in Chicago.</text>
+  </g>
+
+  <g id="comparison-table" transform="translate(42 525)" font-family="Arial, Helvetica, sans-serif">
+    <rect id="table-body" width="996" height="610" fill="#fffdf8" stroke="#ded4c2" stroke-width="2"/>
+    <rect id="table-header" width="996" height="88" fill="#f2e8d8"/>
+    <g id="table-grid" stroke="#ded4c2" stroke-width="2" fill="none">
+      <line x1="0" y1="88" x2="996" y2="88"/><line x1="0" y1="218" x2="996" y2="218"/><line x1="0" y1="348" x2="996" y2="348"/><line x1="0" y1="478" x2="996" y2="478"/>
+      <line x1="450" y1="0" x2="450" y2="610"/><line x1="610" y1="0" x2="610" y2="610"/><line x1="835" y1="0" x2="835" y2="610"/>
+    </g>
+    <g id="table-headings" fill="#0a1f33" font-weight="900" text-anchor="middle">
+      <text id="heading-protection" x="24" y="55" text-anchor="start" font-size="22">Protection</text>
+      <text id="heading-current" x="530" y="40" font-size="18">Current law</text><text id="heading-rlto" x="530" y="63" font-size="16">RLTO</text>
+      <text id="heading-proposal-1" x="722" y="40" font-size="18">Stronger renter</text><text id="heading-proposal-2" x="722" y="63" font-size="18">proposal</text>
+      <text id="heading-fair-1" x="916" y="40" font-size="18">“Fair”</text><text id="heading-fair-2" x="916" y="63" font-size="18">Ordinance</text>
+    </g>
+
+    <g id="protection-labels" fill="#0a1f33" font-size="24" font-weight="900">
+      <text id="row-1-label" x="24" y="124">Just cause to end or</text><text id="row-1-label-2" x="24" y="149">refuse renewal of tenancy</text>
+      <text id="row-2-label" x="24" y="254">Clear eviction defenses</text><text id="row-2-label-2" x="24" y="279">when rules are violated</text>
+      <text id="row-3-label" x="24" y="384">Relocation help for</text><text id="row-3-label-2" x="24" y="409">no-fault displacement</text>
+      <text id="row-4-label" x="24" y="514">A remedy for late</text><text id="row-4-label-2" x="24" y="539">non-renewal notice</text>
+    </g>
+    <g id="protection-notes" fill="#637184" font-size="16" font-weight="650">
+      <text id="row-1-note-1" x="24" y="177">Requires a landlord to give a</text><text id="row-1-note-2" x="24" y="196">valid reason before forcing</text><text id="row-1-note-3" x="24" y="215">a tenant to move.</text>
+      <text id="row-2-note-1" x="24" y="307">Tenants can raise</text><text id="row-2-note-2" x="24" y="326">violations in court.</text>
+      <text id="row-3-note-1" x="24" y="437">Requires moving assistance</text><text id="row-3-note-2" x="24" y="456">when a tenant is forced to</text><text id="row-3-note-3" x="24" y="475">move from no fault of their own.</text>
+      <text id="row-4-note-1" x="24" y="567">A consequence when</text><text id="row-4-note-2" x="24" y="586">notice is ignored.</text>
+    </g>
+
+    <g id="status-badges" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="650" text-anchor="middle">
+      <circle id="current-row-1" cx="532" cy="142" r="22" fill="#d72638"/><text x="532" y="150" font-size="27" font-weight="900" fill="#ffffff">X</text><text x="532" y="184" fill="#637184">Not required</text>
+      <circle id="current-row-2" cx="532" cy="272" r="22" fill="#f4c95d"/><text x="532" y="280" font-size="27" font-weight="900" fill="#0a1f33">~</text><text x="532" y="314" fill="#637184">Limited / implied</text>
+      <circle id="current-row-3" cx="532" cy="402" r="22" fill="#d72638"/><text x="532" y="410" font-size="27" font-weight="900" fill="#ffffff">X</text><text x="532" y="444" fill="#637184">Not required</text>
+      <circle id="current-row-4" cx="532" cy="532" r="22" fill="#16775b"/><path d="M-9 0 L-2 7 L10 -8" transform="translate(532 532)" fill="none" stroke="#ffffff" stroke-width="5" stroke-linejoin="miter"/><text x="532" y="574" fill="#637184">Tenant may stay</text>
+
+      <circle id="proposal-row-1" cx="730" cy="142" r="22" fill="#16775b"/><path d="M-9 0 L-2 7 L10 -8" transform="translate(730 142)" fill="none" stroke="#ffffff" stroke-width="5" stroke-linejoin="miter"/><text x="730" y="184" fill="#16775b">Adds it</text>
+      <circle id="proposal-row-2" cx="730" cy="272" r="22" fill="#16775b"/><path d="M-9 0 L-2 7 L10 -8" transform="translate(730 272)" fill="none" stroke="#ffffff" stroke-width="5" stroke-linejoin="miter"/><text x="730" y="314" fill="#16775b">Strongest</text>
+      <circle id="proposal-row-3" cx="730" cy="402" r="22" fill="#16775b"/><path d="M-9 0 L-2 7 L10 -8" transform="translate(730 402)" fill="none" stroke="#ffffff" stroke-width="5" stroke-linejoin="miter"/><text x="730" y="444" fill="#16775b">Adds it</text>
+      <circle id="proposal-row-4" cx="730" cy="532" r="22" fill="#16775b"/><path d="M-9 0 L-2 7 L10 -8" transform="translate(730 532)" fill="none" stroke="#ffffff" stroke-width="5" stroke-linejoin="miter"/><text x="730" y="574" fill="#16775b">Keeps protections</text>
+
+      <circle id="fair-row-1" cx="916" cy="142" r="22" fill="#d72638"/><text x="916" y="150" font-size="27" font-weight="900" fill="#ffffff">X</text><text x="916" y="184" fill="#637184">Leaves it out</text>
+      <circle id="fair-row-2" cx="916" cy="272" r="22" fill="#d72638"/><text x="916" y="280" font-size="27" font-weight="900" fill="#ffffff">X</text><text x="916" y="314" fill="#637184">Removes defenses</text>
+      <circle id="fair-row-3" cx="916" cy="402" r="22" fill="#d72638"/><text x="916" y="410" font-size="27" font-weight="900" fill="#ffffff">X</text><text x="916" y="444" fill="#637184">Leaves it out</text>
+      <circle id="fair-row-4" cx="916" cy="532" r="22" fill="#d72638"/><text x="916" y="540" font-size="27" font-weight="900" fill="#ffffff">X</text><text x="916" y="574" fill="#637184">Removes remedy</text>
+    </g>
+  </g>
+
+  <g id="action-button" transform="translate(42 1170)">
+    <rect id="action-background" width="996" height="126" rx="16" fill="#43b4e8"/>
+    <text id="action-text" x="498" y="78" text-anchor="middle" fill="#0a1f33" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900">Go to UnfairOrdinance.org to take action.</text>
+  </g>
+</svg>

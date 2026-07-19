@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shareable Flyer | Unfair Ordinance.ORG</title>
+  <meta name="description" content="Print or download a shareable flyer opposing the FAIR Ordinance counterproposal.">
+  <meta property="og:title" content="Shareable Flyer | Unfair Ordinance.ORG">
+  <meta property="og:description" content="Print or download a shareable flyer opposing the FAIR Ordinance counterproposal.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://unfairordinance.org/flyer.html">
+  <meta property="og:image" content="https://unfairordinance.org/public/graphics/UnfairOrdinance_Socials.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="public/favicon.svg">
+  <style>
+    :root {
+      --ink: #0a1f33;
+      --paper: #f8f3e7;
+      --card: #fffdf8;
+      --blue: #43b4e8;
+      --red: #d72638;
+      --gold: #f4c95d;
+      --line: #ded4c2;
+      --muted: #637184;
+      --shadow: 0 18px 60px rgba(10,31,51,.13);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.5;
+    }
+    a { color: #137da9; text-underline-offset: 3px; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    .top {
+      background: rgba(10,31,51,.96);
+      color: white;
+      border-bottom: 4px solid var(--blue);
+    }
+    .nav { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: .02em; text-transform: uppercase; }
+    .nav a { color: white; font-weight: 850; text-decoration: none; }
+    header {
+      background: linear-gradient(135deg, rgba(10,31,51,.96), rgba(14,61,91,.86));
+      color: white;
+      padding: 64px 0 48px;
+    }
+    h1 { margin: 0; max-width: 840px; font-size: clamp(38px, 6vw, 72px); line-height: .98; text-transform: uppercase; }
+    .lede { max-width: 720px; margin: 18px 0 0; color: #d8e6f0; font-size: 20px; }
+    main { padding: 46px 0 70px; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1fr) 364px; gap: 28px; align-items: start; }
+    .preview {
+      background: white;
+      border: 1px solid var(--line);
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+    .preview img { display: block; width: min(100%, 680px); margin: 0 auto; border: 1px solid var(--line); background: white; }
+    .pdf-preview { display: block; width: min(100%, 680px); height: clamp(520px, 75vw, 900px); margin: 0 auto; border: 1px solid var(--line); background: white; }
+    .under-actions { width: min(100%, 320px); margin: 14px auto 0; display: block; }
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 22px;
+      box-shadow: var(--shadow);
+      display: flex;
+      justify-content: center;
+    }
+    h2 { margin: 0 0 10px; font-size: 26px; line-height: 1.1; }
+    p { margin: 0 0 14px; color: #34475b; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 46px;
+      margin-top: 10px;
+      padding: 13px 18px;
+      border-radius: 8px;
+      border: 1.5px solid transparent;
+      background: var(--red);
+      color: white;
+      font: inherit;
+      font-weight: 900;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .button.light { background: white; color: #111; border-color: var(--line); }
+    .button.flyer { background: var(--blue-soft); color: var(--ink); border-color: var(--blue-dark); }
+    .panel .button { max-width: 320px; text-align: center; }
+    .note { margin-top: 16px; color: var(--muted); font-size: 14px; }
+    footer { background: #061624; color: #c6d4df; padding: 30px 0; font-size: 14px; }
+    footer p { color: #c6d4df; margin: 0; }
+    @media (max-width: 820px) {
+      .nav { align-items: flex-start; flex-direction: column; padding: 14px 0; }
+      .layout { grid-template-columns: 1fr; }
+      header { padding: 52px 0; }
+    }
+    @media print {
+      body { background: white; }
+      .top, header, .panel, footer { display: none; }
+      main { padding: 0; }
+      .wrap { width: 100%; }
+      .layout { display: block; }
+      .preview { border: 0; box-shadow: none; padding: 0; }
+      .preview img { width: 100%; border: 0; }
+      .pdf-preview { width: 100%; height: 1100px; border: 0; }
+    }
+  </style>
+  <link rel="stylesheet" href="public/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="top">
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="brand" href="index.html">Unfair Ordinance.ORG</a>
+      <div class="navlinks">
+        <a class="nav-quiet" href="index.html#stakes">What's at stake</a>
+        <a class="nav-quiet" href="education.html">Learn more</a>
+        <a class="nav-action nav-email" href="index.html#email">Email your alder</a>
+        <a class="nav-action nav-call" href="index.html#call">Call your alder</a>
+        <a class="nav-action nav-share" href="share.html">Share on socials</a>
+        <a class="nav-action nav-flyer" href="flyer.html" aria-current="page">Shareable flyer</a>
+      </div>
+    </nav>
+  </div>
+
+  <header>
+    <div class="wrap">
+      <h1>Shareable flyer.</h1>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="wrap layout">
+      <section class="preview" aria-labelledby="flyer-preview-heading">
+        <h2 id="flyer-preview-heading" class="sr-only">Shareable flyer preview</h2>
+        <iframe class="pdf-preview" src="public/docs/unfair-ordinance-flyer.pdf#view=FitH" title="Finished Unfair Ordinance flyer PDF"></iframe>
+        <div class="under-actions">
+          <button class="button flyer" type="button" onclick="window.print()">Print or save as PDF</button>
+        </div>
+      </section>
+      <aside class="panel">
+        <a class="button flyer" href="share.html">Open shareable social media graphic</a>
+        <a class="button primary" href="index.html#email">Email your alder</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Unfair Ordinance.ORG is an independent Chicago renter advocacy site.</p>
+      <p class="footer-meta"><a href="index.html#email">Email your alderperson</a> or <a href="index.html#call">call your alderperson</a> after printing.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Chicago apartment building">
+  <rect width="64" height="64" rx="2" fill="#fffdf8"/>
+  <rect x="10" y="4" width="44" height="6" rx="1" fill="#3b2822"/>
+  <rect x="12" y="11" width="40" height="51" fill="#ad4d32"/>
+  <g fill="#211916">
+    <rect x="16" y="16" width="9" height="13"/>
+    <rect x="27" y="16" width="11" height="13"/>
+    <rect x="40" y="16" width="9" height="13"/>
+    <rect x="16" y="31" width="9" height="13"/>
+    <rect x="27" y="31" width="11" height="13"/>
+    <rect x="40" y="31" width="9" height="13"/>
+    <rect x="16" y="46" width="9" height="10"/>
+    <rect x="40" y="46" width="9" height="10"/>
+  </g>
+  <g fill="#fffdf8">
+    <rect x="18" y="18" width="5" height="4"/>
+    <rect x="18" y="23" width="5" height="4"/>
+    <rect x="29" y="18" width="3" height="4"/>
+    <rect x="33" y="18" width="4" height="4"/>
+    <rect x="29" y="23" width="3" height="4"/>
+    <rect x="33" y="23" width="4" height="4"/>
+    <rect x="42" y="18" width="5" height="4"/>
+    <rect x="42" y="23" width="5" height="4"/>
+    <rect x="18" y="33" width="5" height="4"/>
+    <rect x="18" y="38" width="5" height="4"/>
+    <rect x="29" y="33" width="3" height="4"/>
+    <rect x="33" y="33" width="4" height="4"/>
+    <rect x="29" y="38" width="3" height="4"/>
+    <rect x="33" y="38" width="4" height="4"/>
+    <rect x="42" y="33" width="5" height="4"/>
+    <rect x="42" y="38" width="5" height="4"/>
+    <rect x="18" y="48" width="5" height="3"/>
+    <rect x="18" y="52" width="5" height="3"/>
+    <rect x="42" y="48" width="5" height="3"/>
+    <rect x="42" y="52" width="5" height="3"/>
+    <rect x="27" y="46" width="11" height="12"/>
+  </g>
+  <rect x="28" y="47" width="9" height="11" fill="#3b2822"/>
+  <path d="M24 62h17l-3-4H27z" fill="#ded4c2"/>
+</svg>

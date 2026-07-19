@@ -1,0 +1,187 @@
+{"kind":"deck","id":"pr/0fqqnl","name":"Deck"}
+{"kind":"layout","layoutId":"56289d5a-22d8-4e85-9261-ffa40e3237e6","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"27d2ac98-5e03-41b4-9a40-6081020fa2c7","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/5z462h","slide":1,"title":"UNFAIR ORDINANCE","textShapes":99}
+{"kind":"shape","id":"sh/f2l0ji98","slide":1,"name":"background","bbox":[0,0,1080,1397.65]}
+{"kind":"shape","id":"sh/0nu1cnat","slide":1,"name":"hero-background","bbox":[0,0,1080,334.59]}
+{"kind":"shape","id":"sh/1o3ilsre","slide":1,"name":"hero-stripe-1","bbox":[38.96,0,0.85,334.59]}
+{"kind":"shape","id":"sh/2pcjexsz","slide":1,"name":"hero-stripe-2","bbox":[77.93,0,0.85,334.59]}
+{"kind":"shape","id":"sh/nql0n29k","slide":1,"name":"hero-stripe-3","bbox":[116.89,0,0.85,334.59]}
+{"kind":"shape","id":"sh/oru1gna5","slide":1,"name":"hero-stripe-4","bbox":[155.86,0,0.85,334.59]}
+{"kind":"shape","id":"sh/ps3ipsrq","slide":1,"name":"hero-stripe-5","bbox":[194.82,0,0.85,334.59]}
+{"kind":"shape","id":"sh/atwjixsb","slide":1,"name":"hero-stripe-6","bbox":[233.79,0,0.85,334.59]}
+{"kind":"shape","id":"sh/bu50r29g","slide":1,"name":"hero-stripe-7","bbox":[272.75,0,0.85,334.59]}
+{"kind":"shape","id":"sh/zmd43elo","slide":1,"name":"hero-stripe-8","bbox":[311.72,0,0.85,334.59]}
+{"kind":"shape","id":"sh/yl43atk3","slide":1,"name":"hero-stripe-9","bbox":[350.68,0,0.85,334.59]}
+{"kind":"shape","id":"sh/l8vm5o3u","slide":1,"name":"hero-stripe-10","bbox":[389.65,0,0.85,334.59]}
+{"kind":"shape","id":"sh/07mlcj29","slide":1,"name":"hero-stripe-11","bbox":[428.61,0,0.85,334.59]}
+{"kind":"shape","id":"sh/bidkzels","slide":1,"name":"hero-stripe-12","bbox":[467.58,0,0.85,334.59]}
+{"kind":"shape","id":"sh/qhk369k7","slide":1,"name":"hero-stripe-13","bbox":[506.54,0,0.85,334.59]}
+{"kind":"shape","id":"sh/dkv21o3i","slide":1,"name":"hero-stripe-14","bbox":[545.51,0,0.85,334.59]}
+{"kind":"shape","id":"sh/cjml8j2d","slide":1,"name":"hero-stripe-15","bbox":[584.47,0,0.85,334.59]}
+{"kind":"shape","id":"sh/vex4bylw","slide":1,"name":"hero-stripe-16","bbox":[623.44,0,0.85,334.59]}
+{"kind":"shape","id":"sh/ado3idkb","slide":1,"name":"hero-stripe-17","bbox":[662.4,0,0.85,334.59]}
+{"kind":"shape","id":"sh/69s7ah4j","slide":1,"name":"hero-stripe-18","bbox":[701.36,0,0.85,334.59]}
+{"kind":"shape","id":"sh/7a1oj254","slide":1,"name":"hero-stripe-19","bbox":[740.33,0,0.85,334.59]}
+{"kind":"shape","id":"sh/sbapc7mp","slide":1,"name":"hero-stripe-20","bbox":[779.29,0,0.85,334.59]}
+{"kind":"shape","id":"sh/tcj6lcna","slide":1,"name":"hero-stripe-21","bbox":[818.26,0,0.85,334.59]}
+{"kind":"shape","id":"sh/uxs7eh4v","slide":1,"name":"hero-stripe-22","bbox":[857.22,0,0.85,334.59]}
+{"kind":"shape","id":"sh/fy1o7m50","slide":1,"name":"hero-stripe-23","bbox":[896.19,0,0.85,334.59]}
+{"kind":"shape","id":"sh/gzapgrml","slide":1,"name":"hero-stripe-24","bbox":[935.15,0,0.85,334.59]}
+{"kind":"shape","id":"sh/h0j69w36","slide":1,"name":"hero-stripe-25","bbox":[974.12,0,0.85,334.59]}
+{"kind":"shape","id":"sh/a1on2d4b","slide":1,"name":"hero-stripe-26","bbox":[1013.08,0,0.85,334.59]}
+{"kind":"shape","id":"sh/v2hobi5w","slide":1,"name":"hero-stripe-27","bbox":[1052.05,0,0.85,334.59]}
+{"kind":"shape","id":"sh/x87ixkbq","slide":1,"name":"cyan-divider","bbox":[0,334.59,1080,10.16]}
+{"kind":"shape","id":"sh/c7y1ofa5","slide":1,"name":"flag-white","bbox":[63.53,29.65,49.98,31.34]}
+{"kind":"shape","id":"sh/b6p0vatk","slide":1,"name":"flag-blue","bbox":[63.53,40.24,49.98,10.16]}
+{"kind":"shape","id":"sh/a5wz25sz","slide":1,"name":"flag-diamond-1","bbox":[74.12,42.78,7.62,7.62]}
+{"kind":"shape","id":"sh/lc7i14rm","slide":1,"name":"flag-diamond-2","bbox":[81.74,42.78,7.62,7.62]}
+{"kind":"shape","id":"sh/kby1szah","slide":1,"name":"flag-diamond-3","bbox":[89.36,42.78,7.62,7.62]}
+{"kind":"shape","id":"sh/zap0zutw","slide":1,"name":"flag-diamond-4","bbox":[96.99,42.78,7.62,7.62]}
+{"kind":"textbox","id":"sh/y9gjqpsb","slide":1,"name":"brand-name","text":"UNFAIR ORDINANCE","textPreview":"UNFAIR ORDINANCE","textChars":16,"textLines":1,"bbox":[127.06,33.88,254.12,23.72]}
+{"kind":"textbox","id":"sh/1gnip0bi","slide":1,"name":"headline-1","text":"THE SO-CALLED","textPreview":"THE SO-CALLED","textChars":13,"textLines":1,"bbox":[63.53,114.35,423.53,46.59]}
+{"kind":"textbox","id":"sh/0fehwvax","slide":1,"name":"headline-1-fair","text":"FAIR ORDINANCE","textPreview":"FAIR ORDINANCE","textChars":14,"textLines":1,"bbox":[474.35,114.35,508.24,46.59]}
+{"kind":"textbox","id":"sh/4v2l43ul","slide":1,"name":"headline-2","text":"IS AN UNFAIR ROLLBACK","textPreview":"IS AN UNFAIR ROLLBACK","textChars":21,"textLines":1,"bbox":[63.53,161.79,635.29,46.59]}
+{"kind":"textbox","id":"sh/5wvmx8b6","slide":1,"name":"headline-3","text":"FOR RENTERS.","textPreview":"FOR RENTERS.","textChars":12,"textLines":1,"bbox":[63.53,209.22,402.35,46.59]}
+{"kind":"textbox","id":"sh/itk32tcf","slide":1,"name":"subtitle-1","text":"Chicago's current renter law is the floor.","textPreview":"Chicago's current renter law is the floor.","textChars":42,"textLines":1,"bbox":[63.53,264.71,635.29,23.29]}
+{"kind":"textbox","id":"sh/jut4vyd0","slide":1,"name":"subtitle-2","text":"The Protecting Renters Ordinance adds protections.","textPreview":"The Protecting Renters Ordinance adds protections.","textChars":50,"textLines":1,"bbox":[63.53,285.88,804.71,23.29]}
+{"kind":"textbox","id":"sh/wr2l03up","slide":1,"name":"subtitle-3","text":"The Fair Ordinance would roll some back.","textPreview":"The Fair Ordinance would roll some back.","textChars":40,"textLines":1,"bbox":[63.53,307.06,677.65,23.29]}
+{"kind":"shape","id":"sh/hsb2t8vu","slide":1,"name":"table-body","bbox":[31.76,381.18,1016.47,804.71]}
+{"kind":"shape","id":"sh/u5k3ytcj","slide":1,"name":"table-header","bbox":[31.76,381.18,1016.47,63.53]}
+{"kind":"shape","id":"sh/v6tkryd4","slide":1,"name":"table-header-rule","bbox":[31.76,444.71,1016.47,1.69]}
+{"kind":"shape","id":"sh/83ilwjud","slide":1,"name":"table-row-rule-1","bbox":[31.76,537.04,1016.47,1.69]}
+{"kind":"shape","id":"sh/94r2povy","slide":1,"name":"table-row-rule-2","bbox":[31.76,629.36,1016.47,1.69]}
+{"kind":"shape","id":"sh/by94zexk","slide":1,"name":"table-row-rule-3","bbox":[31.76,721.69,1016.47,1.69]}
+{"kind":"shape","id":"sh/axg369wf","slide":1,"name":"table-row-rule-4","bbox":[31.76,814.02,1016.47,1.69]}
+{"kind":"shape","id":"sh/x0rm1ofq","slide":1,"name":"table-row-rule-5","bbox":[31.76,906.35,1016.47,1.69]}
+{"kind":"shape","id":"sh/czil8je5","slide":1,"name":"table-row-rule-6","bbox":[31.76,998.68,1016.47,1.69]}
+{"kind":"shape","id":"sh/z2943yxw","slide":1,"name":"table-row-rule-7","bbox":[31.76,1091.01,1016.47,1.69]}
+{"kind":"shape","id":"sh/y10natwb","slide":1,"name":"table-column-rule-1","bbox":[412.94,381.18,1.69,804.71]}
+{"kind":"shape","id":"sh/l4rm5of2","slide":1,"name":"table-column-rule-2","bbox":[635.29,381.18,1.69,804.71]}
+{"kind":"shape","id":"sh/k3i5cjeh","slide":1,"name":"table-column-rule-3","bbox":[834.35,381.18,1.69,804.71]}
+{"kind":"textbox","id":"sh/7qt47yxs","slide":1,"name":"heading-protection","text":"Protection","textPreview":"Protection","textChars":10,"textLines":1,"bbox":[50.82,401.51,338.82,23.29]}
+{"kind":"textbox","id":"sh/m5knetwn","slide":1,"name":"heading-current","text":"Current law","textPreview":"Current law","textChars":11,"textLines":1,"bbox":[412.94,391.76,222.35,20.33]}
+{"kind":"textbox","id":"sh/il476xgv","slide":1,"name":"heading-rlto","text":"RLTO","textPreview":"RLTO","textChars":4,"textLines":1,"bbox":[412.94,412.52,222.35,16.94]}
+{"kind":"textbox","id":"sh/jmdof2h0","slide":1,"name":"heading-pro","text":"Protecting Renters","textPreview":"Protecting Renters","textChars":18,"textLines":1,"bbox":[635.29,388.8,199.06,20.33]}
+{"kind":"textbox","id":"sh/4nmp87yl","slide":1,"name":"heading-pro-2","text":"Ordinance","textPreview":"Ordinance","textChars":9,"textLines":1,"bbox":[635.29,406.59,199.06,20.33]}
+{"kind":"textbox","id":"sh/5ofqhcz6","slide":1,"name":"heading-fair","text":"“Fair Ordinance”","textPreview":"“Fair Ordinance”","textChars":16,"textLines":1,"bbox":[834.35,391.76,213.88,20.33]}
+{"kind":"textbox","id":"sh/ux472xgj","slide":1,"name":"heading-fair-2","text":"counterproposal","textPreview":"counterproposal","textChars":15,"textLines":1,"bbox":[834.35,413.36,213.88,14.82]}
+{"kind":"textbox","id":"sh/vydob2h4","slide":1,"name":"row-1-title-1","text":"Just cause to end or refuse","textPreview":"Just cause to end or refuse","textChars":27,"textLines":1,"bbox":[50.82,457.41,347.29,16.09]}
+{"kind":"textbox","id":"sh/wzmp4nyp","slide":1,"name":"row-1-title-2","text":"renewal of a tenancy","textPreview":"renewal of a tenancy","textChars":20,"textLines":1,"bbox":[50.82,473.93,347.29,16.09]}
+{"kind":"textbox","id":"sh/hkv6dsza","slide":1,"name":"row-1-note-1","text":"A landlord must have a valid reason","textPreview":"A landlord must have a valid reason","textChars":35,"textLines":1,"bbox":[50.82,492.14,347.29,12.71]}
+{"kind":"textbox","id":"sh/eto7ehgn","slide":1,"name":"row-1-note-2","text":"before forcing a tenant to move.","textPreview":"before forcing a tenant to move.","textChars":32,"textLines":1,"bbox":[50.82,505.69,347.29,12.71]}
+{"kind":"shape","id":"sh/fux8nmh8","slide":1,"name":"row-1-current-circle","bbox":[510.78,470.96,26.26,26.26]}
+{"kind":"textbox","id":"sh/pojadgjq","slide":1,"name":"row-1-current-mark","text":"X","textPreview":"X","textChars":1,"textLines":1,"bbox":[510.78,473.51,26.26,21.18]}
+{"kind":"textbox","id":"sh/onq94bi5","slide":1,"name":"row-1-current-note","text":"Not required","textPreview":"Not required","textChars":12,"textLines":1,"bbox":[430.73,498.49,186.35,14.82]}
+{"kind":"shape","id":"sh/nmhsb61k","slide":1,"name":"row-1-pro-circle","bbox":[721.69,470.96,26.26,26.26]}
+{"kind":"textbox","id":"sh/2l8r2l0z","slide":1,"name":"row-1-pro-mark","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[721.69,473.51,26.26,21.18]}
+{"kind":"textbox","id":"sh/1kza9gje","slide":1,"name":"row-1-pro-note","text":"Adds it","textPreview":"Adds it","textChars":7,"textLines":1,"bbox":[641.65,498.49,186.35,14.82]}
+{"kind":"shape","id":"sh/gjq90bit","slide":1,"name":"row-1-fair-circle","bbox":[928.38,470.96,26.26,26.26]}
+{"kind":"textbox","id":"sh/fihs7618","slide":1,"name":"row-1-fair-mark","text":"X","textPreview":"X","textChars":1,"textLines":1,"bbox":[928.38,473.51,26.26,21.18]}
+{"kind":"textbox","id":"sh/eh8ry103","slide":1,"name":"row-1-fair-note","text":"Leaves it out","textPreview":"Leaves it out","textChars":13,"textLines":1,"bbox":[848.33,498.49,186.35,14.82]}
+{"kind":"textbox","id":"sh/lg3al0ji","slide":1,"name":"row-2-title-1","text":"Clear eviction defenses when","textPreview":"Clear eviction defenses when","textChars":28,"textLines":1,"bbox":[50.82,549.74,347.29,16.09]}
+{"kind":"textbox","id":"sh/kfutcvid","slide":1,"name":"row-2-title-2","text":"a landlord violates the rules","textPreview":"a landlord violates the rules","textChars":29,"textLines":1,"bbox":[50.82,566.26,347.29,16.09]}
+{"kind":"textbox","id":"sh/gnyl036h","slide":1,"name":"row-2-note-1","text":"Tenants can raise notice, cause, or","textPreview":"Tenants can raise notice, cause, or","textChars":35,"textLines":1,"bbox":[50.82,584.47,347.29,12.71]}
+{"kind":"textbox","id":"sh/ho7mt872","slide":1,"name":"row-2-note-2","text":"relocation violations in court.","textPreview":"relocation violations in court.","textChars":31,"textLines":1,"bbox":[50.82,598.02,347.29,12.71]}
+{"kind":"shape","id":"sh/ulg3ytor","slide":1,"name":"row-2-current-circle","bbox":[510.78,563.29,26.26,26.26]}
+{"kind":"textbox","id":"sh/vmp4rypw","slide":1,"name":"row-2-current-mark","text":"~","textPreview":"~","textChars":1,"textLines":1,"bbox":[510.78,565.84,26.26,21.18]}
+{"kind":"textbox","id":"sh/4by5436t","slide":1,"name":"row-2-current-note","text":"Limited / implied","textPreview":"Limited / implied","textChars":17,"textLines":1,"bbox":[430.73,590.82,186.35,14.82]}
+{"kind":"shape","id":"sh/5crmx87e","slide":1,"name":"row-2-pro-circle","bbox":[721.69,563.29,26.26,26.26]}
+{"kind":"textbox","id":"sh/ipg32don","slide":1,"name":"row-2-pro-mark","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[721.69,565.84,26.26,21.18]}
+{"kind":"textbox","id":"sh/3ap4vyp8","slide":1,"name":"row-2-pro-note","text":"Strongest","textPreview":"Strongest","textChars":9,"textLines":1,"bbox":[641.65,590.82,186.35,14.82]}
+{"kind":"shape","id":"sh/kfelsj69","slide":1,"name":"row-2-fair-circle","bbox":[928.38,563.29,26.26,26.26]}
+{"kind":"textbox","id":"sh/lgnmlo7u","slide":1,"name":"row-2-fair-mark","text":"X","textPreview":"X","textChars":1,"textLines":1,"bbox":[928.38,565.84,26.26,21.18]}
+{"kind":"textbox","id":"sh/natorm9c","slide":1,"name":"row-2-fair-note","text":"Removes existing defenses","textPreview":"Removes existing defenses","textChars":25,"textLines":1,"bbox":[848.33,590.82,186.35,14.82]}
+{"kind":"textbox","id":"sh/29k7yh87","slide":1,"name":"row-3-title-1","text":"Relocation help for no-fault","textPreview":"Relocation help for no-fault","textChars":28,"textLines":1,"bbox":[50.82,642.07,347.29,16.09]}
+{"kind":"textbox","id":"sh/9cv6twri","slide":1,"name":"row-3-title-2","text":"displacement","textPreview":"displacement","textChars":12,"textLines":1,"bbox":[50.82,658.59,347.29,16.09]}
+{"kind":"textbox","id":"sh/obmp0rqx","slide":1,"name":"row-3-note-1","text":"Requires moving assistance when a tenant","textPreview":"Requires moving assistance when a tenant","textChars":40,"textLines":1,"bbox":[50.82,676.8,347.29,12.71]}
+{"kind":"textbox","id":"sh/f6ton29g","slide":1,"name":"row-3-note-2","text":"is forced to move from no fault of their own.","textPreview":"is forced to move from no fault of their own.","textChars":45,"textLines":1,"bbox":[50.82,690.35,347.29,12.71]}
+{"kind":"shape","id":"sh/e5k7ux8v","slide":1,"name":"row-3-current-circle","bbox":[510.78,655.62,26.26,26.26]}
+{"kind":"textbox","id":"sh/18b6pcrm","slide":1,"name":"row-3-current-mark","text":"X","textPreview":"X","textChars":1,"textLines":1,"bbox":[510.78,658.16,26.26,21.18]}
+{"kind":"textbox","id":"sh/072pw7q1","slide":1,"name":"row-3-current-note","text":"Not required","textPreview":"Not required","textChars":12,"textLines":1,"bbox":[430.73,683.15,186.35,14.82]}
+{"kind":"shape","id":"sh/ri9oj29k","slide":1,"name":"row-3-pro-circle","bbox":[721.69,655.62,26.26,26.26]}
+{"kind":"textbox","id":"sh/qh07qx8z","slide":1,"name":"row-3-pro-mark","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[721.69,658.16,26.26,21.18]}
+{"kind":"textbox","id":"sh/vu1ojehg","slide":1,"name":"row-3-pro-note","text":"Adds it","textPreview":"Adds it","textChars":7,"textLines":1,"bbox":[641.65,683.15,186.35,14.82]}
+{"kind":"shape","id":"sh/utsna9gv","slide":1,"name":"row-3-fair-circle","bbox":[928.38,655.62,26.26,26.26]}
+{"kind":"textbox","id":"sh/hw36l4z6","slide":1,"name":"row-3-fair-mark","text":"X","textPreview":"X","textChars":1,"textLines":1,"bbox":[928.38,658.16,26.26,21.18]}
+{"kind":"textbox","id":"sh/wvu5czy1","slide":1,"name":"row-3-fair-note","text":"Leaves it out","textPreview":"Leaves it out","textChars":13,"textLines":1,"bbox":[848.33,683.15,186.35,14.82]}
+{"kind":"textbox","id":"sh/jylonehc","slide":1,"name":"row-4-title-1","text":"Tiered notice before rent increases","textPreview":"Tiered notice before rent increases","textChars":35,"textLines":1,"bbox":[50.82,734.4,347.29,16.09]}
+{"kind":"textbox","id":"sh/ixcne9gr","slide":1,"name":"row-4-note-1","text":"Current law requires 30, 60, or 120 days","textPreview":"Current law requires 30, 60, or 120 days","textChars":40,"textLines":1,"bbox":[50.82,769.13,347.29,12.71]}
+{"kind":"textbox","id":"sh/5036pozi","slide":1,"name":"row-4-note-2","text":"depending on tenancy length.","textPreview":"depending on tenancy length.","textChars":28,"textLines":1,"bbox":[50.82,782.68,347.29,12.71]}
+{"kind":"shape","id":"sh/4zu5gjyx","slide":1,"name":"row-4-current-circle","bbox":[510.78,747.95,26.26,26.26]}
+{"kind":"textbox","id":"sh/rm5oryho","slide":1,"name":"row-4-current-mark","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[510.78,750.49,26.26,21.18]}
+{"kind":"textbox","id":"sh/61cnitg3","slide":1,"name":"row-4-current-note","text":"30 / 60 / 120 days","textPreview":"30 / 60 / 120 days","textChars":18,"textLines":1,"bbox":[430.73,775.48,186.35,14.82]}
+{"kind":"shape","id":"sh/ore583e1","slide":1,"name":"row-4-pro-circle","bbox":[721.69,747.95,26.26,26.26]}
+{"kind":"textbox","id":"sh/psnmhovm","slide":1,"name":"row-4-pro-mark","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[721.69,750.49,26.26,21.18]}
+{"kind":"textbox","id":"sh/2pwn6twv","slide":1,"name":"row-4-pro-note","text":"Strengthens to 120 days","textPreview":"Strengthens to 120 days","textChars":23,"textLines":1,"bbox":[641.65,775.48,186.35,14.82]}
+{"kind":"shape","id":"sh/3q54fyxg","slide":1,"name":"row-4-fair-circle","bbox":[928.38,747.95,26.26,26.26]}
+{"kind":"textbox","id":"sh/g3e54je5","slide":1,"name":"row-4-fair-mark","text":"~","textPreview":"~","textChars":1,"textLines":1,"bbox":[928.38,750.49,26.26,21.18]}
+{"kind":"textbox","id":"sh/1onmdofq","slide":1,"name":"row-4-fair-note","text":"Restructures notice rules","textPreview":"Restructures notice rules","textChars":25,"textLines":1,"bbox":[848.33,775.48,186.35,14.82]}
+{"kind":"textbox","id":"sh/e1cn29wz","slide":1,"name":"row-5-title-1","text":"A remedy when a landlord gives","textPreview":"A remedy when a landlord gives","textChars":30,"textLines":1,"bbox":[50.82,826.73,347.29,16.09]}
+{"kind":"textbox","id":"sh/f254bexk","slide":1,"name":"row-5-title-2","text":"a late non-renewal notice","textPreview":"a late non-renewal notice","textChars":25,"textLines":1,"bbox":[50.82,843.25,347.29,16.09]}
+{"kind":"textbox","id":"sh/szul0jet","slide":1,"name":"row-5-note-1","text":"Notice protects a renter only when","textPreview":"Notice protects a renter only when","textChars":34,"textLines":1,"bbox":[50.82,861.46,347.29,12.71]}
+{"kind":"textbox","id":"sh/t03m94fe","slide":1,"name":"row-5-note-2","text":"ignoring it has a consequence.","textPreview":"ignoring it has a consequence.","textChars":30,"textLines":1,"bbox":[50.82,875.01,347.29,12.71]}
+{"kind":"shape","id":"sh/twv2x072","slide":1,"name":"row-5-current-circle","bbox":[510.78,840.28,26.26,26.26]}
+{"kind":"textbox","id":"sh/8vml4v6x","slide":1,"name":"row-5-current-mark","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[510.78,842.82,26.26,21.18]}
+{"kind":"textbox","id":"sh/7udkvqpc","slide":1,"name":"row-5-current-note","text":"Tenant may stay through notice period","textPreview":"Tenant may stay through notice period","textChars":37,"textLines":1,"bbox":[430.73,867.81,186.35,14.82]}
+{"kind":"shape","id":"sh/6t4325or","slide":1,"name":"row-5-pro-circle","bbox":[721.69,840.28,26.26,26.26]}
+{"kind":"textbox","id":"sh/lsv2t076","slide":1,"name":"row-5-pro-mark","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[721.69,842.82,26.26,21.18]}
+{"kind":"textbox","id":"sh/krm10v6l","slide":1,"name":"row-5-pro-note","text":"Keeps protections","textPreview":"Keeps protections","textChars":17,"textLines":1,"bbox":[641.65,867.81,186.35,14.82]}
+{"kind":"shape","id":"sh/jqdkrqp0","slide":1,"name":"row-5-fair-circle","bbox":[928.38,840.28,26.26,26.26]}
+{"kind":"textbox","id":"sh/ypkjylof","slide":1,"name":"row-5-fair-mark","text":"X","textPreview":"X","textChars":1,"textLines":1,"bbox":[928.38,842.82,26.26,21.18]}
+{"kind":"textbox","id":"sh/5of25k7a","slide":1,"name":"row-5-fair-note","text":"Removes the practical remedy","textPreview":"Removes the practical remedy","textChars":28,"textLines":1,"bbox":[848.33,867.81,186.35,14.82]}
+{"kind":"textbox","id":"sh/4n6lcf65","slide":1,"name":"row-6-title-1","text":"Security deposit and junk-fee limits","textPreview":"Security deposit and junk-fee limits","textChars":36,"textLines":1,"bbox":[50.82,919.06,347.29,16.09]}
+{"kind":"textbox","id":"sh/2hgrax0b","slide":1,"name":"row-6-note-1","text":"Caps and transparency for upfront costs.","textPreview":"Caps and transparency for upfront costs.","textChars":40,"textLines":1,"bbox":[50.82,953.79,347.29,12.71]}
+{"kind":"shape","id":"sh/nip8ji1w","slide":1,"name":"row-6-current-circle","bbox":[510.78,932.61,26.26,26.26]}
+{"kind":"textbox","id":"sh/ojy9cni1","slide":1,"name":"row-6-current-mark","text":"~","textPreview":"~","textChars":1,"textLines":1,"bbox":[510.78,935.15,26.26,21.18]}
+{"kind":"textbox","id":"sh/pk7qlsjm","slide":1,"name":"row-6-current-note","text":"Some protections","textPreview":"Some protections","textChars":16,"textLines":1,"bbox":[430.73,960.14,186.35,14.82]}
+{"kind":"shape","id":"sh/etw76d0z","slide":1,"name":"row-6-pro-circle","bbox":[721.69,932.61,26.26,26.26]}
+{"kind":"textbox","id":"sh/fup8fi1k","slide":1,"name":"row-6-pro-mark","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[721.69,935.15,26.26,21.18]}
+{"kind":"textbox","id":"sh/gvy98ni5","slide":1,"name":"row-6-pro-note","text":"Stronger","textPreview":"Stronger","textChars":8,"textLines":1,"bbox":[641.65,960.14,186.35,14.82]}
+{"kind":"shape","id":"sh/1g7qhsjq","slide":1,"name":"row-6-fair-circle","bbox":[928.38,932.61,26.26,26.26]}
+{"kind":"textbox","id":"sh/yp0rih0j","slide":1,"name":"row-6-fair-mark","text":"~","textPreview":"~","textChars":1,"textLines":1,"bbox":[928.38,935.15,26.26,21.18]}
+{"kind":"textbox","id":"sh/zq98r21o","slide":1,"name":"row-6-fair-note","text":"Partial","textPreview":"Partial","textChars":7,"textLines":1,"bbox":[848.33,960.14,186.35,14.82]}
+{"kind":"textbox","id":"sh/jip4ne54","slide":1,"name":"row-7-title-1","text":"Citywide rental registry and","textPreview":"Citywide rental registry and","textChars":28,"textLines":1,"bbox":[50.82,1011.39,347.29,16.09]}
+{"kind":"textbox","id":"sh/ihgne94j","slide":1,"name":"row-7-title-2","text":"public enforcement","textPreview":"public enforcement","textChars":18,"textLines":1,"bbox":[50.82,1027.91,347.29,16.09]}
+{"kind":"textbox","id":"sh/547mpona","slide":1,"name":"row-7-note-1","text":"A way to track rental units and","textPreview":"A way to track rental units and","textChars":31,"textLines":1,"bbox":[50.82,1046.12,347.29,12.71]}
+{"kind":"textbox","id":"sh/k3y5gjmp","slide":1,"name":"row-7-note-2","text":"repeat violations.","textPreview":"repeat violations.","textChars":18,"textLines":1,"bbox":[50.82,1059.67,347.29,12.71]}
+{"kind":"shape","id":"sh/ve54ju58","slide":1,"name":"row-7-current-circle","bbox":[510.78,1024.94,26.26,26.26]}
+{"kind":"textbox","id":"sh/adwnap4n","slide":1,"name":"row-7-current-mark","text":"~","textPreview":"~","textChars":1,"textLines":1,"bbox":[510.78,1027.48,26.26,21.18]}
+{"kind":"textbox","id":"sh/xg7ml4ne","slide":1,"name":"row-7-current-note","text":"No registry","textPreview":"No registry","textChars":11,"textLines":1,"bbox":[430.73,1052.47,186.35,14.82]}
+{"kind":"shape","id":"sh/wfy5czmt","slide":1,"name":"row-7-pro-circle","bbox":[721.69,1024.94,26.26,26.26]}
+{"kind":"textbox","id":"sh/fa9ovy5c","slide":1,"name":"row-7-pro-mark","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[721.69,1027.48,26.26,21.18]}
+{"kind":"textbox","id":"sh/u90nmt4r","slide":1,"name":"row-7-pro-note","text":"Adds tools","textPreview":"Adds tools","textChars":10,"textLines":1,"bbox":[641.65,1052.47,186.35,14.82]}
+{"kind":"shape","id":"sh/cfa1gv29","slide":1,"name":"row-7-fair-circle","bbox":[928.38,1024.94,26.26,26.26]}
+{"kind":"textbox","id":"sh/dg32p03u","slide":1,"name":"row-7-fair-mark","text":"~","textPreview":"~","textChars":1,"textLines":1,"bbox":[928.38,1027.48,26.26,21.18]}
+{"kind":"textbox","id":"sh/qdsjelkj","slide":1,"name":"row-7-fair-note","text":"More limited","textPreview":"More limited","textChars":12,"textLines":1,"bbox":[848.33,1052.47,186.35,14.82]}
+{"kind":"textbox","id":"sh/be1knqlo","slide":1,"name":"row-8-title-1","text":"Funding and staff to enforce","textPreview":"Funding and staff to enforce","textChars":28,"textLines":1,"bbox":[50.82,1103.72,347.29,16.09]}
+{"kind":"textbox","id":"sh/0ju1kv2l","slide":1,"name":"row-8-title-2","text":"the rules","textPreview":"the rules","textChars":9,"textLines":1,"bbox":[50.82,1120.24,347.29,16.09]}
+{"kind":"textbox","id":"sh/lk32t036","slide":1,"name":"row-8-note-1","text":"An ordinance needs people and","textPreview":"An ordinance needs people and","textChars":29,"textLines":1,"bbox":[50.82,1138.45,347.29,12.71]}
+{"kind":"textbox","id":"sh/yhcji5kf","slide":1,"name":"row-8-note-2","text":"resources to work in real life.","textPreview":"resources to work in real life.","textChars":31,"textLines":1,"bbox":[50.82,1152,347.29,12.71]}
+{"kind":"shape","id":"sh/zilkrql0","slide":1,"name":"row-8-current-circle","bbox":[510.78,1117.27,26.26,26.26]}
+{"kind":"textbox","id":"sh/8nelof2h","slide":1,"name":"row-8-current-mark","text":"~","textPreview":"~","textChars":1,"textLines":1,"bbox":[510.78,1119.81,26.26,21.18]}
+{"kind":"textbox","id":"sh/9on2xk32","slide":1,"name":"row-8-current-note","text":"Existing capacity only","textPreview":"Existing capacity only","textChars":22,"textLines":1,"bbox":[430.73,1144.8,186.35,14.82]}
+{"kind":"shape","id":"sh/h4j21kv6","slide":1,"name":"row-8-pro-circle","bbox":[721.69,1117.27,26.26,26.26]}
+{"kind":"textbox","id":"sh/w3a18ful","slide":1,"name":"row-8-pro-mark","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[721.69,1119.81,26.26,21.18]}
+{"kind":"textbox","id":"sh/v21kzad0","slide":1,"name":"row-8-pro-note","text":"Registry fees fund enforcement","textPreview":"Registry fees fund enforcement","textChars":30,"textLines":1,"bbox":[641.65,1144.8,186.35,14.82]}
+{"kind":"shape","id":"sh/u18j65cv","slide":1,"name":"row-8-fair-circle","bbox":[928.38,1117.27,26.26,26.26]}
+{"kind":"textbox","id":"sh/58j25kvi","slide":1,"name":"row-8-fair-mark","text":"X","textPreview":"X","textChars":1,"textLines":1,"bbox":[928.38,1119.81,26.26,21.18]}
+{"kind":"textbox","id":"sh/47a1cfux","slide":1,"name":"row-8-fair-note","text":"No dedicated funding","textPreview":"No dedicated funding","textChars":20,"textLines":1,"bbox":[848.33,1144.8,186.35,14.82]}
+{"kind":"shape","id":"sh/j61k3adc","slide":1,"name":"action-panel","bbox":[31.76,1234.59,643.76,122.82]}
+{"kind":"textbox","id":"sh/i5sja5cr","slide":1,"name":"action-title","text":"TAKE ACTION","textPreview":"TAKE ACTION","textChars":11,"textLines":1,"bbox":[57.18,1249.41,381.18,27.95]}
+{"kind":"textbox","id":"sh/lcz2tgvy","slide":1,"name":"action-line-1","text":"Ask your alderperson to reject the Fair Ordinance","textPreview":"Ask your alderperson to reject the Fair Ordinance","textChars":49,"textLines":1,"bbox":[57.18,1279.06,584.47,21.18]}
+{"kind":"textbox","id":"sh/kbq10vud","slide":1,"name":"action-line-2","text":"and support stronger renter protections.","textPreview":"and support stronger renter protections.","textChars":40,"textLines":1,"bbox":[57.18,1300.24,508.24,21.18]}
+{"kind":"textbox","id":"sh/ah4zahsb","slide":1,"name":"action-line-3","text":"EMAIL. CALL. SHARE.","textPreview":"EMAIL. CALL. SHARE.","textChars":19,"textLines":1,"bbox":[57.18,1326.49,338.82,19.06]}
+{"kind":"shape","id":"sh/bidg3mtw","slide":1,"name":"qr-box","bbox":[762.35,1233.74,135.53,135.53]}
+{"kind":"shape","id":"sh/cj6hcrah","slide":1,"name":"qr-corner-1","bbox":[777.18,1248.99,29.65,4.66]}
+{"kind":"shape","id":"sh/x4fy5wb2","slide":1,"name":"qr-corner-2","bbox":[777.18,1248.99,4.66,29.65]}
+{"kind":"shape","id":"sh/y5oze1sn","slide":1,"name":"qr-corner-3","bbox":[853.41,1248.99,29.65,4.66]}
+{"kind":"shape","id":"sh/z6xg76ts","slide":1,"name":"qr-corner-4","bbox":[878.4,1248.99,4.66,29.65]}
+{"kind":"shape","id":"sh/k76hgbad","slide":1,"name":"qr-corner-5","bbox":[777.18,1349.36,29.65,4.66]}
+{"kind":"shape","id":"sh/l8fi9gby","slide":1,"name":"qr-corner-6","bbox":[777.18,1324.38,4.66,29.65]}
+{"kind":"shape","id":"sh/e9kz2xs3","slide":1,"name":"qr-corner-7","bbox":[853.41,1349.36,29.65,4.66]}
+{"kind":"shape","id":"sh/fatgv2to","slide":1,"name":"qr-corner-8","bbox":[878.4,1324.38,4.66,29.65]}
+{"kind":"textbox","id":"sh/jy187254","slide":1,"name":"qr-label","text":"QR SPACE","textPreview":"QR SPACE","textChars":8,"textLines":1,"bbox":[775.06,1284.99,110.12,21.18]}
+{"kind":"textbox","id":"sh/ixsryx4j","slide":1,"name":"qr-note","text":"LINK COMING SOON","textPreview":"LINK COMING SOON","textChars":16,"textLines":1,"bbox":[775.06,1308.71,110.12,16.94]}
+{"kind":"textbox","id":"sh/5kja9cna","slide":1,"name":"site-url","text":"UnfairOrdinance.org","textPreview":"UnfairOrdinance.org","textChars":19,"textLines":1,"bbox":[31.76,1380.71,338.82,16.09]}
+{"kind":"notes","id":"nt/5z462h","slide":1,"text":""}

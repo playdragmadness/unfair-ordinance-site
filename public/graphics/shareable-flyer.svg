@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2550" height="3300" viewBox="0 0 2550 3300" role="img" aria-labelledby="title desc">
+  <title id="title">Unfair Ordinance shareable flyer</title>
+  <desc id="desc">A polished print flyer matching the Unfair Ordinance website, with a full renter protection comparison table and blank QR space.</desc>
+  <defs>
+    <filter id="soft-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#0a1f33" flood-opacity=".12"/>
+    </filter>
+    <pattern id="pinstripe" width="92" height="92" patternUnits="userSpaceOnUse">
+      <path d="M0 0H2V92H0Z" fill="#ffffff" opacity=".07"/>
+    </pattern>
+    <style>
+      .font { font-family: Inter, Arial, sans-serif; }
+    </style>
+  </defs>
+  <rect width="2550" height="3300" fill="#ffffff"/>
+
+  <rect width="2550" height="790" fill="#0a1f33"/>
+  <rect width="2550" height="790" fill="url(#pinstripe)"/>
+  <rect y="790" width="2550" height="24" fill="#43b4e8"/>
+  <g class="font" transform="translate(150 70)">
+    <rect width="118" height="74" fill="#fffdf8" stroke="#ffffff" stroke-width="4"/>
+    <rect y="25" width="118" height="24" fill="#43b4e8"/>
+    <g fill="#d72638">
+      <polygon points="25,37 34,28 43,37 34,46"/>
+      <polygon points="43,37 52,28 61,37 52,46"/>
+      <polygon points="61,37 70,28 79,37 70,46"/>
+      <polygon points="79,37 88,28 97,37 88,46"/>
+    </g>
+    <text x="150" y="50" font-size="48" font-weight="950" fill="#ffffff" letter-spacing="2">UNFAIR ORDINANCE</text>
+  </g>
+
+  <g class="font">
+    <text x="150" y="310" font-size="94" font-weight="950" fill="#ffffff">
+      <tspan x="150" dy="0">THE SO-CALLED </tspan><tspan fill="#ff6472">FAIR</tspan>
+      <tspan x="150" dy="108" fill="#ff6472">ORDINANCE IS AN</tspan>
+      <tspan x="150" dy="108">UNFAIR ROLLBACK.</tspan>
+    </text>
+    <text x="150" y="635" font-size="34" font-weight="650" fill="#d8e6f0">
+      <tspan x="150" dy="0">Chicago's current renter law is the floor.</tspan>
+      <tspan x="150" dy="48">The Protecting Renters Ordinance adds protections.</tspan>
+      <tspan x="150" dy="48">The FAIR Ordinance would roll some back.</tspan>
+    </text>
+  </g>
+
+  <g class="font" transform="translate(75 900)" filter="url(#soft-shadow)">
+    <rect width="2400" height="1900" fill="#fffdf8" stroke="#ded4c2" stroke-width="5"/>
+    <rect width="2400" height="150" fill="#f2e8d8"/>
+    <text x="44" y="93" font-size="43" font-weight="950" fill="#0a1f33">Protection</text>
+    <text x="1190" y="76" font-size="38" font-weight="950" fill="#0a1f33" text-anchor="middle">Current law</text>
+    <text x="1190" y="112" font-size="27" font-weight="850" fill="#0a1f33" text-anchor="middle">RLTO</text>
+    <text x="1660" y="66" font-size="34" font-weight="950" fill="#0a1f33" text-anchor="middle">Protecting Renters</text>
+    <text x="1660" y="106" font-size="34" font-weight="950" fill="#0a1f33" text-anchor="middle">Ordinance</text>
+    <text x="2148" y="66" font-size="34" font-weight="950" fill="#0a1f33" text-anchor="middle">"FAIR Ordinance"</text>
+    <text x="2148" y="106" font-size="27" font-weight="850" fill="#637184" text-anchor="middle">counterproposal</text>
+
+    <g stroke="#ded4c2" stroke-width="4">
+      <line x1="0" y1="150" x2="2400" y2="150"/>
+      <line x1="0" y1="368" x2="2400" y2="368"/><line x1="0" y1="586" x2="2400" y2="586"/><line x1="0" y1="804" x2="2400" y2="804"/><line x1="0" y1="1022" x2="2400" y2="1022"/><line x1="0" y1="1240" x2="2400" y2="1240"/><line x1="0" y1="1458" x2="2400" y2="1458"/><line x1="0" y1="1676" x2="2400" y2="1676"/>
+      <line x1="900" y1="0" x2="900" y2="1900"/><line x1="1425" y1="0" x2="1425" y2="1900"/><line x1="1895" y1="0" x2="1895" y2="1900"/>
+    </g>
+
+    <g font-size="36" font-weight="900" fill="#0a1f33">
+      <text x="44" y="204"><tspan x="44">Just cause to end or refuse</tspan><tspan x="44" dy="43">renewal of a tenancy</tspan></text>
+      <text x="44" y="422"><tspan x="44">Clear eviction defenses when</tspan><tspan x="44" dy="43">a landlord violates the rules</tspan></text>
+      <text x="44" y="640"><tspan x="44">Relocation help for no-fault</tspan><tspan x="44" dy="43">displacement</tspan></text>
+      <text x="44" y="858">Tiered notice before rent increases</text>
+      <text x="44" y="1076"><tspan x="44">A remedy when a landlord gives</tspan><tspan x="44" dy="43">a late non-renewal notice</tspan></text>
+      <text x="44" y="1294">Security deposit and junk-fee limits</text>
+      <text x="44" y="1512"><tspan x="44">Citywide rental registry and</tspan><tspan x="44" dy="43">public enforcement</tspan></text>
+      <text x="44" y="1730"><tspan x="44">Funding and staff to enforce</tspan><tspan x="44" dy="43">the rules</tspan></text>
+    </g>
+    <g font-size="27" font-weight="650" fill="#637184">
+      <text x="44" y="301"><tspan x="44">Requires a landlord to give a valid</tspan><tspan x="44" dy="34">reason before forcing a tenant to move.</tspan></text><text x="44" y="519"><tspan x="44">Tenants can raise notice, cause, or</tspan><tspan x="44" dy="34">relocation violations in court.</tspan></text><text x="44" y="737"><tspan x="44">Requires moving assistance when a tenant</tspan><tspan x="44" dy="34">is forced to move from no fault of their own.</tspan></text><text x="44" y="923"><tspan x="44">Current law requires 30, 60, or 120 days</tspan><tspan x="44" dy="34">depending on tenancy length.</tspan></text><text x="44" y="1173"><tspan x="44">Notice protects a renter only when</tspan><tspan x="44" dy="34">ignoring it has a consequence.</tspan></text><text x="44" y="1359">Caps and transparency for upfront costs.</text><text x="44" y="1609"><tspan x="44">A way to track rental units and</tspan><tspan x="44" dy="34">repeat violations.</tspan></text><text x="44" y="1827"><tspan x="44">An ordinance needs people and</tspan><tspan x="44" dy="34">resources to work in real life.</tspan></text>
+    </g>
+    <g>
+      <g fill="#d72638"><circle cx="1190" cy="237" r="31"/><circle cx="1190" cy="673" r="31"/></g><g fill="#f4c95d"><circle cx="1190" cy="455" r="31"/><circle cx="1190" cy="1327" r="31"/><circle cx="1190" cy="1545" r="31"/><circle cx="1190" cy="1763" r="31"/></g><g fill="#16775b"><circle cx="1190" cy="891" r="31"/><circle cx="1190" cy="1109" r="31"/></g>
+      <g fill="#16775b"><circle cx="1660" cy="237" r="31"/><circle cx="1660" cy="455" r="31"/><circle cx="1660" cy="673" r="31"/><circle cx="1660" cy="891" r="31"/><circle cx="1660" cy="1109" r="31"/><circle cx="1660" cy="1327" r="31"/><circle cx="1660" cy="1545" r="31"/><circle cx="1660" cy="1763" r="31"/></g>
+      <g fill="#d72638"><circle cx="2110" cy="237" r="31"/><circle cx="2110" cy="455" r="31"/><circle cx="2110" cy="673" r="31"/><circle cx="2110" cy="1109" r="31"/><circle cx="2110" cy="1763" r="31"/></g><g fill="#f4c95d"><circle cx="2110" cy="891" r="31"/><circle cx="2110" cy="1327" r="31"/><circle cx="2110" cy="1545" r="31"/></g>
+      <g font-size="38" font-weight="950" text-anchor="middle"><text x="1190" y="250" fill="#fff">X</text><text x="1190" y="468" fill="#0a1f33">~</text><text x="1190" y="686" fill="#fff">X</text><text x="1190" y="904" fill="#fff">✓</text><text x="1190" y="1122" fill="#fff">✓</text><text x="1190" y="1340" fill="#0a1f33">~</text><text x="1190" y="1558" fill="#0a1f33">~</text><text x="1190" y="1776" fill="#0a1f33">~</text><text x="1660" y="250" fill="#fff">✓</text><text x="1660" y="468" fill="#fff">✓</text><text x="1660" y="686" fill="#fff">✓</text><text x="1660" y="904" fill="#fff">✓</text><text x="1660" y="1122" fill="#fff">✓</text><text x="1660" y="1340" fill="#fff">✓</text><text x="1660" y="1558" fill="#fff">✓</text><text x="1660" y="1776" fill="#fff">✓</text><text x="2110" y="250" fill="#fff">X</text><text x="2110" y="468" fill="#fff">X</text><text x="2110" y="686" fill="#fff">X</text><text x="2110" y="904" fill="#0a1f33">~</text><text x="2110" y="1122" fill="#fff">X</text><text x="2110" y="1340" fill="#0a1f33">~</text><text x="2110" y="1558" fill="#0a1f33">~</text><text x="2110" y="1776" fill="#fff">X</text></g>
+    </g>
+    <g font-size="25" font-weight="650" fill="#637184" text-anchor="middle">
+      <text x="1190" y="297">Not required</text><text x="1660" y="297" fill="#16775b">Adds it</text><text x="2110" y="297">Leaves it out</text><text x="1190" y="515">Limited / implied</text><text x="1660" y="515" fill="#16775b">Strongest</text><text x="2110" y="515">Removes existing defenses</text><text x="1190" y="733">Not required</text><text x="1660" y="733" fill="#16775b">Adds it</text><text x="2110" y="733">Leaves it out</text><text x="1190" y="951">30 / 60 / 120 days</text><text x="1660" y="951" fill="#16775b">Strengthens to 120 days</text><text x="2110" y="941"><tspan x="2110">Keeps notice periods</tspan><tspan x="2110" dy="30">but weakens the remedy</tspan></text><text x="1190" y="1169">Tenant may stay through notice period</text><text x="1660" y="1169" fill="#16775b">Keeps protections</text><text x="2110" y="1161"><tspan x="2110">Removes the post-notice</tspan><tspan x="2110" dy="30">remedy</tspan></text><text x="1190" y="1387">Some protections</text><text x="1660" y="1387" fill="#16775b">Stronger</text><text x="2110" y="1387">Partial</text><text x="1190" y="1605">No registry</text><text x="1660" y="1605" fill="#16775b">Adds tools</text><text x="2110" y="1605"><tspan x="2110">More limited</tspan><tspan x="2110" dy="30">and unfunded</tspan></text><text x="1190" y="1823">Existing capacity only</text><text x="1660" y="1823" fill="#16775b">Registry fees fund enforcement</text><text x="2110" y="1823">No dedicated funding</text>
+    </g>
+  </g>
+
+  <g class="font" transform="translate(75 2915)">
+    <rect width="1520" height="290" fill="#f8f3e7" stroke="#ded4c2" stroke-width="5"/>
+    <rect width="12" height="290" fill="#d72638"/>
+    <text x="56" y="82" font-size="54" font-weight="950" fill="#0a1f33">TAKE ACTION</text>
+    <text x="56" y="148" font-size="35" font-weight="750" fill="#34475b">ASK YOUR ALDERPERSON TO REJECT THE FAIR ORDINANCE</text>
+    <text x="56" y="202" font-size="35" font-weight="750" fill="#34475b">AND SUPPORT STRONGER RENTER PROTECTIONS.</text>
+    <text x="56" y="258" font-size="37" font-weight="950" fill="#d72638">EMAIL. CALL. SHARE.</text>
+    <rect x="1800" y="-2" width="320" height="320" fill="#ffffff" stroke="#0a1f33" stroke-width="7"/>
+    <path d="M1835 52V30H1905M2015 30H2085V100M2085 218V288H2015M1905 288H1835V266" fill="none" stroke="#43b4e8" stroke-width="11"/>
+    <text x="1960" y="143" font-size="38" font-weight="950" fill="#637184" text-anchor="middle">QR SPACE</text>
+    <text x="1960" y="195" font-size="25" font-weight="850" fill="#637184" text-anchor="middle">LINK COMING SOON</text>
+  </g>
+
+  <g class="font">
+    <text x="75" y="3265" font-size="43" font-weight="950" fill="#0a1f33">UnfairOrdinance.org</text>
+  </g>
+</svg>

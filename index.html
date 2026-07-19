@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unfair Ordinance.ORG | Tell Chicago City Council to protect renters</title>
+  <meta name="description" content="A Chicago renter advocacy site opposing the so-called FAIR Ordinance and urging City Council to protect strong tenant rights.">
+  <meta property="og:title" content="Unfair Ordinance.ORG">
+  <meta property="og:description" content="Tell Chicago City Council: do not weaken renter protections.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://unfairordinance.org/">
+  <meta property="og:image" content="https://unfairordinance.org/public/graphics/UnfairOrdinance_Socials.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0a1f33">
+  <link rel="icon" href="public/favicon.svg">
+  <style>
+    :root {
+      --ink: #0a1f33;
+      --ink-2: #163a59;
+      --paper: #f8f3e7;
+      --card: #fffdf8;
+      --blue: #43b4e8;
+      --blue-dark: #137da9;
+      --red: #d72638;
+      --red-dark: #9f1f2c;
+      --gold: #f4c95d;
+      --green: #16775b;
+      --line: #ded4c2;
+      --muted: #637184;
+      --shadow: 0 18px 60px rgba(10,31,51,.13);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.5;
+    }
+    a { color: var(--blue-dark); text-underline-offset: 3px; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    .top {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(10,31,51,.94);
+      color: white;
+      border-bottom: 4px solid var(--blue);
+      backdrop-filter: blur(14px);
+    }
+    .nav { min-height: 58px; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: .02em; text-transform: uppercase; }
+    .navlinks { display: flex; gap: 8px; align-items: center; font-size: 13px; font-weight: 750; }
+    .navlinks a { color: white; text-decoration: none; opacity: .9; }
+    .navlinks a.nav-action { padding: 7px 10px; border-radius: 8px; opacity: 1; white-space: nowrap; }
+    .navlinks a.nav-quiet { padding: 7px 10px; border: 1.5px solid rgba(255,255,255,.34); border-radius: 8px; background: transparent; opacity: 1; white-space: nowrap; }
+    .navlinks a.nav-email { background: var(--red); color: white; }
+    .navlinks a.nav-call { background: var(--blue); color: var(--ink); }
+    .navlinks a.nav-share { background: white; color: var(--ink); border-color: white; }
+    .navlinks a.nav-flyer { background: var(--blue-soft); color: var(--ink); border-color: var(--blue); }
+    .hero {
+      background:
+        linear-gradient(135deg, rgba(10,31,51,.94), rgba(14,61,91,.84)),
+        repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 1px, transparent 1px 72px);
+      color: white;
+      overflow: hidden;
+    }
+    .hero-grid {
+      min-height: 620px;
+      display: grid;
+      align-items: center;
+      padding: 76px 0 64px;
+    }
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 22px;
+      padding: 8px 12px;
+      border: 1px solid rgba(67,180,232,.7);
+      color: #b7eaff;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 6px rgba(215,38,56,.18); }
+    h1 {
+      margin: 0;
+      max-width: 1120px;
+      font-size: clamp(42px, 7vw, 88px);
+      line-height: .94;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    h1 strong { color: #ff6472; }
+    .lede {
+      max-width: 1120px;
+      margin: 24px 0 30px;
+      color: #d8e6f0;
+      font-size: clamp(18px, 2.3vw, 22px);
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 13px 18px;
+      border-radius: 8px;
+      border: 1.5px solid transparent;
+      font-weight: 900;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .button.primary { background: var(--red); color: white; }
+    .button.blue { background: var(--blue); color: var(--ink); border-color: var(--blue); }
+    .button.secondary { border-color: rgba(255,255,255,.34); color: white; background: rgba(255,255,255,.08); }
+    .button.light { border-color: var(--line); color: var(--ink); background: white; }
+    .button.white { background: white; color: var(--ink); border-color: var(--ink); }
+    .button.flyer { background: var(--blue-soft); color: var(--ink); border-color: var(--blue-dark); }
+    section { padding: 72px 0; }
+    .section-head { max-width: 760px; margin-bottom: 30px; }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--red-dark);
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    h2 { margin: 0; font-size: clamp(30px, 4vw, 50px); line-height: 1.03; letter-spacing: 0; }
+    .section-head p { margin: 15px 0 0; color: var(--muted); font-size: 18px; }
+    @media (min-width: 861px) {
+      .section-head { max-width: 1120px; }
+    }
+    .comparison {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      background: var(--card);
+      box-shadow: 0 6px 24px rgba(10,31,51,.06);
+    }
+    .compare-table {
+      width: 100%;
+      min-width: 680px;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    .compare-table th, .compare-table td { padding: 11px 12px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+    .compare-table th { background: #f2e8d8; text-align: left; font-size: 13px; line-height: 1.2; }
+    .compare-table th:not(:first-child), .compare-table td:not(:first-child) { text-align: center; }
+    .compare-table tr:last-child td { border-bottom: 0; }
+    .feature {
+      width: 28%;
+      font-size: 14px;
+      font-weight: 850;
+      color: var(--ink);
+      text-align: left;
+      line-height: 1.25;
+    }
+    .plain { display: block; margin-top: 3px; color: var(--muted); font-size: 12px; font-weight: 500; line-height: 1.25; }
+    .mark { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 999px; color: white; font-size: 14px; font-weight: 950; }
+    .yes { background: var(--green); }
+    .no { background: var(--red); }
+    .mixed { background: var(--gold); color: var(--ink); }
+    .cell-note { display: block; margin-top: 5px; color: var(--muted); font-size: 12px; line-height: 1.2; text-align: center; }
+    .tool-band { background: var(--ink); color: white; }
+    .tool-band .section-head p { color: #c7d8e4; }
+    .tool {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+      align-items: start;
+    }
+    .form-panel, .preview-panel {
+      background: var(--card);
+      color: var(--ink);
+      border: 1px solid rgba(255,255,255,.18);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .form-grid { display: grid; gap: 16px; }
+    label { display: block; margin-bottom: 7px; font-size: 13px; font-weight: 900; }
+    input, select, textarea {
+      width: 100%;
+      border: 1.5px solid var(--line);
+      border-radius: 8px;
+      padding: 12px 12px;
+      font: inherit;
+      color: var(--ink);
+      background: white;
+    }
+    textarea { min-height: 260px; resize: vertical; }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--blue-dark);
+      box-shadow: 0 0 0 3px rgba(67,180,232,.22);
+    }
+    .choices { display: grid; gap: 9px; }
+    .choice input { width: auto; }
+    .choice label {
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      gap: 10px;
+      align-items: start;
+      margin: 0;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 750;
+    }
+    .choice small { display: block; margin-top: 2px; color: var(--muted); font-weight: 500; }
+    .choice label:has(input:checked) { border-color: var(--blue-dark); background: rgba(67,180,232,.08); }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .note {
+      margin: 12px 0 0;
+      padding: 12px;
+      border: 1px solid rgba(19,125,169,.25);
+      background: rgba(67,180,232,.1);
+      color: #24506c;
+      font-size: 13px;
+    }
+    .to-block {
+      padding: 12px;
+      margin-bottom: 14px;
+      border: 1px solid var(--line);
+      background: #f6efe2;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .to-block b { color: var(--ink); }
+    .recipients {
+      margin-bottom: 14px;
+      display: grid;
+      gap: 8px;
+    }
+    .recipient-row {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 8px;
+      align-items: center;
+    }
+    .recipient-row span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+    .recipient-row input {
+      font-size: 13px;
+      color: #34475b;
+    }
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    button.button { font: inherit; }
+    button.primary:disabled { background: #b8afa1; cursor: not-allowed; }
+    .send-note { color: var(--muted); font-size: 13px; margin: 12px 0 0; }
+    .source-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .source {
+      background: rgba(255,255,255,.7);
+      border: 1px solid var(--line);
+      padding: 18px;
+    }
+    .source h3 { margin: 0 0 8px; }
+    .call-section { background: var(--paper); color: var(--ink); }
+    .callout {
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-top: 5px solid var(--blue-dark);
+      background: #e8f5fa;
+    }
+    .callout .eyebrow { color: #34475b; }
+    .callout p:last-child { margin-bottom: 0; }
+    .script { margin-top: 14px; padding: 15px; background: white; border-left: 4px solid var(--red); color: #34475b; }
+    footer { background: #061624; color: #c6d4df; padding: 34px 0; font-size: 14px; }
+    footer p { max-width: 850px; margin: 0 0 8px; }
+    @media (max-width: 860px) {
+      .nav { align-items: flex-start; padding: 14px 0; flex-direction: column; }
+      .navlinks { width: 100%; flex-wrap: wrap; overflow: visible; padding-bottom: 4px; }
+      .hero-grid, .tool, .source-grid { grid-template-columns: 1fr; }
+      .hero-grid { min-height: 0; padding-top: 46px; }
+      section { padding: 52px 0; }
+    }
+    @media (max-width: 700px) {
+      .comparison { overflow: visible; border: 0; background: transparent; box-shadow: none; }
+      .compare-table, .compare-table tbody, .compare-table tr, .compare-table td { display: block; width: 100%; min-width: 0; }
+      .compare-table thead { display: none; }
+      .compare-table tr { margin-bottom: 14px; border: 1px solid var(--line); background: var(--card); }
+      .compare-table td { border-bottom: 1px solid var(--line); padding: 13px 14px; }
+      .compare-table td.feature { width: auto; }
+      .compare-table td:not(.feature) { display: grid; grid-template-columns: 118px minmax(0, 1fr); gap: 10px; align-items: center; text-align: right !important; }
+      .compare-table td:not(.feature)::before { content: attr(data-label); color: var(--ink); font-size: 12px; font-weight: 900; text-align: left; }
+      .compare-table td:not(.feature) .mark { grid-column: 2; justify-self: end; }
+      .compare-table td:not(.feature) .cell-note { grid-column: 2; justify-self: end; margin-top: 0; text-align: right; }
+      .compare-table tr:last-child td { border-bottom: 1px solid var(--line); }
+      .compare-table tr td:last-child { border-bottom: 0; }
+    }
+    @media (max-width: 560px) {
+      .wrap { width: min(100% - 28px, 1120px); }
+      .row { grid-template-columns: 1fr; }
+      .navlinks a.nav-action, .navlinks a.nav-quiet { white-space: normal; text-align: center; }
+    }
+  </style>
+  <link rel="stylesheet" href="public/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="top">
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="brand" href="index.html">Unfair Ordinance.ORG</a>
+      <div class="navlinks">
+        <a class="nav-quiet" href="#stakes" aria-current="page">What's at stake</a>
+        <a class="nav-quiet" href="education.html">Learn more</a>
+        <a class="nav-action nav-email" href="#email">Email your alder</a>
+        <a class="nav-action nav-call" href="#call">Call your alder</a>
+        <a class="nav-action nav-share" href="share.html">Share on socials</a>
+        <a class="nav-action nav-flyer" href="flyer.html">Shareable flyer</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>The so-called <strong>FAIR Ordinance</strong> is an unfair rollback.</h1>
+        <p class="lede">Chicago's current Residential Landlord and Tenant Ordinance is the floor. The proposed Protecting Renters Ordinance would build on it and protect renters. The "FAIR Ordinance" counterproposal rolls back existing protections and leaves out the strongest new defenses renters need.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#email">Email your alderperson</a>
+          <a class="button blue" href="#call">Call your alderperson</a>
+          <a class="button white" href="share.html">Share on socials</a>
+          <a class="button flyer" href="flyer.html">Shareable flyer</a>
+          <a class="button secondary" href="#stakes">See the comparison</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="stakes">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">The choice before council</p>
+          <h2>Current law, the stronger proposal, and the counterproposal are not the same thing.</h2>
+        </div>
+        <div class="comparison-intro">
+          <p class="definition-line"><strong>RLTO</strong> means the current law, the Residential Landlord Tenant Ordinance. <strong>PRO</strong> means the proposed Protecting Renters Ordinance. The <strong>FAIR Ordinance</strong> is the competing counterproposal.</p>
+          <div class="takeaway-row" aria-label="Comparison at a glance">
+            <article class="takeaway">
+              <span class="takeaway-index" aria-hidden="true">1</span>
+              <div><strong>Current RLTO is the floor.</strong><span>It includes some notice and tenant remedies, but no general just-cause requirement.</span></div>
+            </article>
+            <article class="takeaway">
+              <span class="takeaway-index" aria-hidden="true">2</span>
+              <div><strong>PRO adds stronger protections.</strong><span>It would add just cause, clearer defenses, relocation help, and enforcement tools.</span></div>
+            </article>
+            <article class="takeaway">
+              <span class="takeaway-index" aria-hidden="true">3</span>
+              <div><strong>The FAIR Ordinance falls short.</strong><span>It leaves out or weakens several of the protections renters need most.</span></div>
+            </article>
+          </div>
+          <div class="table-legend" aria-label="Comparison table legend">
+            <span><span class="mark yes" aria-hidden="true">✓</span> Adds or keeps a stronger protection</span>
+            <span><span class="mark mixed" aria-hidden="true">~</span> Limited or partial protection</span>
+            <span><span class="mark no" aria-hidden="true">X</span> Not included or weakened</span>
+          </div>
+        </div>
+        <div class="comparison">
+          <table class="compare-table" aria-label="Comparison of renter protections">
+            <caption class="sr-only">Comparison of protections under current Chicago law, the Protecting Renters Ordinance, and the FAIR Ordinance counterproposal.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Protection</th>
+                <th scope="col">Current RLTO</th>
+                <th scope="col">Protecting Renters Ordinance</th>
+                <th scope="col">FAIR Ordinance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="feature">Just cause to end or refuse renewal of a tenancy<span class="plain">A landlord must have a valid reason before forcing a move.</span></td>
+                <td><span class="mark no">X</span><span class="cell-note">Not required</span></td>
+                <td><span class="mark yes">✓</span><span class="cell-note">Adds it</span></td>
+                <td><span class="mark no">X</span><span class="cell-note">Leaves it out</span></td>
+              </tr>
+              <tr>
+                <td class="feature">Clear eviction defenses when a landlord violates the rules<span class="plain">Tenants can raise notice, cause, or relocation violations in court.</span></td>
+                <td><span class="mark mixed">~</span><span class="cell-note">Limited / implied</span></td>
+                <td><span class="mark yes">✓</span><span class="cell-note">Strongest</span></td>
+                <td><span class="mark no">X</span><span class="cell-note">Removes existing defenses</span></td>
+              </tr>
+              <tr>
+                <td class="feature">Relocation help for no-fault displacement<span class="plain">Moving assistance when renters are pushed out through no fault of their own.</span></td>
+                <td><span class="mark no">X</span><span class="cell-note">Not required</span></td>
+                <td><span class="mark yes">✓</span><span class="cell-note">Adds it</span></td>
+                <td><span class="mark no">X</span><span class="cell-note">Leaves it out</span></td>
+              </tr>
+              <tr>
+                <td class="feature">Tiered notice before rent increases<span class="plain">Current law requires 30, 60, or 120 days depending on how long the tenant has lived there.</span></td>
+                <td><span class="mark yes">✓</span><span class="cell-note">30 / 60 / 120 days</span></td>
+                <td><span class="mark yes">✓</span><span class="cell-note">Strengthens to 120 days</span></td>
+                <td><span class="mark mixed">~</span><span class="cell-note">Keeps notice periods but weakens the remedy</span></td>
+              </tr>
+              <tr>
+                <td class="feature">A remedy when a landlord gives a late non-renewal notice<span class="plain">Notice only protects a renter when there is a consequence for ignoring it.</span></td>
+                <td><span class="mark yes">✓</span><span class="cell-note">Tenant may stay through the required notice period</span></td>
+                <td><span class="mark yes">✓</span><span class="cell-note">Keeps protections</span></td>
+                <td><span class="mark no">X</span><span class="cell-note">Removes the post-notice remedy</span></td>
+              </tr>
+              <tr>
+                <td class="feature">Security deposit and junk-fee limits<span class="plain">Caps and transparency for upfront costs.</span></td>
+                <td><span class="mark mixed">~</span><span class="cell-note">Some protections</span></td>
+                <td><span class="mark yes">✓</span><span class="cell-note">Stronger</span></td>
+                <td><span class="mark mixed">~</span><span class="cell-note">Partial</span></td>
+              </tr>
+              <tr>
+                <td class="feature">Citywide rental registry and public enforcement<span class="plain">A way to track rental units and repeat violations.</span></td>
+                <td><span class="mark no">X</span><span class="cell-note">No registry</span></td>
+                <td><span class="mark yes">✓</span><span class="cell-note">Adds tools</span></td>
+                <td><span class="mark mixed">~</span><span class="cell-note">More limited and unfunded</span></td>
+              </tr>
+              <tr>
+                <td class="feature">Codify a Chicago eviction-defense program.<span class="plain">Helps renters get legal advice or representation when they are at risk of eviction.</span></td>
+                <td><span class="mark no">X</span><span class="cell-note">No dedicated program</span></td>
+                <td><span class="mark yes">✓</span><span class="cell-note">Adds eviction-counsel program</span></td>
+                <td><span class="mark no">X</span><span class="cell-note">No dedicated program</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="email" class="tool-band" aria-labelledby="email-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Take action</p>
+          <h2 id="email-heading">Email your alderperson from your own inbox.</h2>
+          <p>Choose your ward and priorities, review the draft, then open it in your own email service. Nothing you type is stored or sent by this website.</p>
+        </div>
+        <div class="tool">
+          <form class="form-panel form-grid" id="actionForm">
+            <div class="step-title"><span class="step-number" aria-hidden="true">1</span> Choose your ward and priorities</div>
+            <p class="step-intro">Your ward identifies your alderperson. You can select more than one identity and more than one issue.</p>
+            <div>
+              <label for="ward">Your ward</label>
+              <select id="ward" required>
+                <option value="">Select your ward</option>
+              </select>
+              <p class="note">Not sure? Use the City of Chicago's official <a href="https://www.chicago.gov/city/en/depts/mayor/iframe/lookup_ward_and_alderman.html" target="_blank" rel="noopener">ward lookup</a>, then come back and pick it here.</p>
+            </div>
+            <div class="row">
+              <div>
+                <label for="name">Your name</label>
+                <input id="name" autocomplete="name" placeholder="Jordan Rivera" required>
+              </div>
+              <fieldset>
+                <legend>I am a...</legend>
+                <div class="choices">
+                  <div class="choice"><label><input type="checkbox" name="status" value="renter" checked><span>Renter</span></label></div>
+                  <div class="choice"><label><input type="checkbox" name="status" value="homeowner"><span>Homeowner</span></label></div>
+                  <div class="choice"><label><input type="checkbox" name="status" value="Chicago resident" checked><span>Chicago resident</span></label></div>
+                  <div class="choice"><label><input type="checkbox" name="status" value="housing advocate"><span>Housing advocate</span></label></div>
+                </div>
+              </fieldset>
+            </div>
+            <div>
+              <label for="address">Address or neighborhood (optional)</label>
+              <input id="address" autocomplete="street-address" placeholder="Logan Square, or 1234 W Example Ave">
+            </div>
+            <fieldset>
+              <legend>What should your message emphasize?</legend>
+              <div class="choices">
+                <div class="choice"><label><input type="checkbox" name="priority" value="justcause" checked><span>Just-cause protections <small>Landlords should need a real reason to end or refuse renewal of a tenancy.</small></span></label></div>
+                <div class="choice"><label><input type="checkbox" name="priority" value="defenses" checked><span>Eviction defenses <small>Tenants need enforceable defenses when landlords violate notice, cause, or relocation rules.</small></span></label></div>
+                <div class="choice"><label><input type="checkbox" name="priority" value="relocation"><span>Relocation assistance <small>No-fault displacement should include help with moving costs.</small></span></label></div>
+                <div class="choice"><label><input type="checkbox" name="priority" value="fees"><span>Upfront costs and junk fees <small>Deposits and fees should be transparent, limited, and tied to actual costs.</small></span></label></div>
+                <div class="choice"><label><input type="checkbox" name="priority" value="enforcement"><span>Stronger enforcement <small>Rules need public records, real remedies, and city follow-through.</small></span></label></div>
+              </div>
+            </fieldset>
+            <div>
+              <label for="personal">One personal sentence (optional, but powerful)</label>
+              <input id="personal" placeholder="Stable housing matters to me because...">
+            </div>
+          </form>
+          <div class="preview-panel">
+            <div class="step-title"><span class="step-number" aria-hidden="true">2</span> Review your message</div>
+            <div class="to-block" id="toBlock">Choose a ward to see the recipient.</div>
+            <div class="recipients" aria-label="Email recipients">
+              <div class="recipient-row"><span>To</span><input id="toEmails" readonly></div>
+              <div class="recipient-row"><span>Cc</span><input id="ccEmails" readonly></div>
+            </div>
+            <label for="subject">Subject</label>
+            <input id="subject">
+            <label for="body" style="margin-top:12px;">Email draft</label>
+            <textarea id="body"></textarea>
+            <div class="actions">
+              <button class="button primary" id="sendBtn" type="button" disabled>Open in email app</button>
+              <button class="button light" id="copyRecipientsBtn" type="button">Copy recipients</button>
+              <button class="button light" id="copyBtn" type="button">Copy message</button>
+            </div>
+            <p class="send-note" id="sendNote" role="status" aria-live="polite">Fill in your ward, name, and at least one identity checkbox to enable the email link.</p>
+            <p class="fallback-note">If your browser does not open an email service, use <strong>Copy recipients</strong> and <strong>Copy message</strong>, then paste them into a new email.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="call" class="call-section" aria-labelledby="call-heading">
+      <div class="wrap">
+        <div class="callout" aria-labelledby="call-heading">
+          <p class="eyebrow">Take action</p>
+          <h2 id="call-heading">Call your alderperson.</h2>
+          <p>A personal call is a quick way to make your position clear. Ask the office to record your view on the FAIR Ordinance and the Protecting Renters Ordinance.</p>
+          <p class="script">"I live in the ward and I am asking the alderperson to reject the FAIR Ordinance. It rolls back existing renter protections and leaves out just cause, meaningful eviction defenses, and funded enforcement. Please support stronger protections in the Protecting Renters Ordinance."</p>
+          <div class="actions">
+            <a class="button blue" href="https://www.chicago.gov/city/en/depts/mayor/iframe/lookup_ward_and_alderman.html" target="_blank" rel="noopener">Find your alderperson's phone number</a>
+            <a class="button primary" href="#email">Email your alderperson</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>Unfair Ordinance.org</strong> is an independent Chicago renter advocacy site. It does not send email on anyone's behalf and does not store form entries or any user data.</p>
+      <p>Visitors should review the draft message, edit it in their own words, and send only if they choose to do so.</p>
+      <p class="footer-meta">Contact information is drawn from the <a href="https://chicago.legistar.com/DepartmentDetail.aspx?GUID=7F2E07E3-4FED-4863-A084-265E9B04521F&amp;ID=12386" target="_blank" rel="noopener">City Clerk's Housing and Real Estate Committee directory</a>, checked July 8, 2026. <a href="education.html#sources">View the source documents.</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const roster = [
+      [1, "Daniel La Spata"], [2, "Brian Hopkins"], [3, "Pat Dowell"], [4, "Lamont Robinson"], [5, "Desmon Yancy"],
+      [6, "William Hall"], [7, "Gregory Mitchell"], [8, "Michelle Harris"], [9, "Anthony Beale"], [10, "Peter Chico"],
+      [11, "Nicole Lee"], [12, "Julia Ramirez"], [13, "Marty Quinn"], [14, "Jeylu Gutierrez"], [15, "Raymond Lopez"],
+      [16, "Stephanie Coleman"], [17, "David Moore"], [18, "Derrick Curtis"], [19, "Matthew O'Shea"], [20, "Jeanette Taylor"],
+      [21, "Ronnie Mosley"], [22, "Michael Rodriguez"], [23, "Silvana Tabares"], [24, "Monique Scott"], [25, "Byron Sigcho-Lopez"],
+      [26, "Jessica Fuentes"], [27, "Walter Burnett"], [28, "Jason Ervin"], [29, "Chris Taliaferro"], [30, "Ruth Cruz"],
+      [31, "Felix Cardona Jr."], [32, "Scott Waguespack"], [33, "Rossana Rodriguez Sanchez"], [34, "William Conway"], [35, "Carlos Ramirez-Rosa"],
+      [36, "Gilbert Villegas"], [37, "Emma Mitts"], [38, "Nicholas Sposato"], [39, "Samantha Nugent"], [40, "Andre Vasquez"],
+      [41, "Anthony Napolitano"], [42, "Brendan Reilly"], [43, "Timothy Knudsen"], [44, "Bennett Lawson"], [45, "James Gardiner"],
+      [46, "Angela Clay"], [47, "Matthew Martin"], [48, "Leni Manaa-Hoppenworth"], [49, "Maria Hadden"], [50, "Debra Silverstein"]
+    ];
+    const wardEmails = {
+      1: "info@the1stward.com", 3: "Ward03@cityofchicago.org", 4: "Ward04@cityofchicago.org",
+      7: "Alderman@gregmitchell7thward.org", 8: "Ward08@cityofchicago.org", 13: "Ward13@cityofchicago.org",
+      17: "David.Moore@cityofchicago.org", 20: "Jeanette.Taylor@cityofchicago.org", 23: "Ward23@cityofchicago.org",
+      25: "Ward25@cityofchicago.org", 27: "Ward27@cityofchicago.org", 33: "Info@33rdward.org",
+      35: "Ward35@cityofchicago.org", 36: "Ward36@cityofchicago.org", 37: "Ward37@cityofchicago.org",
+      46: "info@46thward.com", 48: "info@the48thward.org", 49: "Office@49thward.org"
+    };
+    const emailForWard = ward => wardEmails[ward] || `ward${String(ward).padStart(2, "0")}@cityofchicago.org`;
+    const committeeRecipients = [
+      { ward: 25, name: "Byron Sigcho-Lopez" },
+      { ward: 7, name: "Gregory Mitchell" },
+      { ward: 27, name: "Walter Burnett" },
+      { ward: 46, name: "Angela Clay" },
+      { ward: 3, name: "Pat Dowell" },
+      { ward: 26, name: "Jessica Fuentes" },
+      { ward: 49, name: "Maria Hadden" },
+      { ward: 8, name: "Michelle Harris" },
+      { ward: 1, name: "Daniel La Spata" },
+      { ward: 48, name: "Leni Manaa-Hoppenworth" },
+      { ward: 37, name: "Emma Mitts" },
+      { ward: 17, name: "David Moore" },
+      { ward: 13, name: "Marty Quinn" },
+      { ward: 35, name: "Carlos Ramirez-Rosa" },
+      { ward: 4, name: "Lamont Robinson" },
+      { ward: 33, name: "Rossana Rodriguez Sanchez" },
+      { ward: 24, name: "Monique Scott" },
+      { ward: 23, name: "Silvana Tabares" },
+      { ward: 20, name: "Jeanette Taylor" },
+      { ward: 36, name: "Gilbert Villegas" }
+    ];
+    const mayorEmail = "letterforthemayor@cityofchicago.org";
+    const wardSelect = document.querySelector("#ward");
+    const byWard = Object.fromEntries(roster.map(([ward, name]) => [ward, { ward, name, email: emailForWard(ward) }]));
+    roster.forEach(([ward, name]) => {
+      const option = document.createElement("option");
+      option.value = ward;
+      option.textContent = `Ward ${ward} - Ald. ${name}`;
+      wardSelect.append(option);
+    });
+    const comparisonLabels = Array.from(document.querySelectorAll(".compare-table thead th")).map(cell => cell.textContent.trim());
+    document.querySelectorAll(".compare-table tbody tr").forEach(row => {
+      row.querySelectorAll("td").forEach((cell, index) => { cell.dataset.label = comparisonLabels[index]; });
+    });
+    document.querySelectorAll(".mark").forEach(mark => {
+      const label = mark.classList.contains("yes")
+        ? "Adds or keeps a stronger protection"
+        : mark.classList.contains("mixed")
+          ? "Limited or partial protection"
+          : "Not included or weakened";
+      mark.setAttribute("role", "img");
+      mark.setAttribute("aria-label", label);
+    });
+
+    const paragraphs = {
+      justcause: "The counterproposal expressly preserves at-will non-renewal. Chicago renters need just-cause protections so a family that has paid rent and followed the lease cannot be pushed out without a real reason.",
+      defenses: "The Protecting Renters Ordinance creates clearer eviction defenses and burden rules when a landlord violates notice, cause, or relocation requirements. Those protections should not be stripped out.",
+      relocation: "When tenants are displaced through no fault of their own, relocation assistance can be the difference between a stable move and a housing crisis. Council should keep meaningful relocation protections in the ordinance.",
+      fees: "I also support transparent limits on security deposits, application fees, move-in fees, and other non-rent charges. Renters should know the true cost of a home before they apply or sign.",
+      enforcement: "The RLTO only works when renters can enforce it. Chicago needs stronger public enforcement, public records for repeat violators, and private remedies that are practical to use."
+    };
+    const fields = ["ward", "name", "address", "personal"].map(id => document.querySelector(`#${id}`));
+    const subject = document.querySelector("#subject");
+    const body = document.querySelector("#body");
+    const toBlock = document.querySelector("#toBlock");
+    const toEmails = document.querySelector("#toEmails");
+    const ccEmails = document.querySelector("#ccEmails");
+    const sendBtn = document.querySelector("#sendBtn");
+    const sendNote = document.querySelector("#sendNote");
+    let bodyEdited = false;
+    let subjectEdited = false;
+
+    function ordinal(n) {
+      const s = ["th", "st", "nd", "rd"], v = n % 100;
+      return n + (s[(v - 20) % 10] || s[v] || s[0]);
+    }
+    function surname(name) {
+      return name.split(" ").slice(-1)[0].replace("Jr.", "").trim();
+    }
+    function selected() {
+      return Array.from(document.querySelectorAll('input[name="priority"]:checked')).map(input => input.value);
+    }
+    function selectedStatuses() {
+      return Array.from(document.querySelectorAll('input[name="status"]:checked')).map(input => input.value);
+    }
+    function uniqueEmails(items) {
+      const seen = new Set();
+      return items
+        .map(item => typeof item === "string" ? item : item.email || emailForWard(item.ward))
+        .filter(Boolean)
+        .filter(email => {
+          const key = email.toLowerCase();
+          if (seen.has(key)) return false;
+          seen.add(key);
+          return true;
+        });
+    }
+    function recipientLists() {
+      const ward = Number(wardSelect.value || 0);
+      const alder = byWard[ward];
+      const to = uniqueEmails([
+        ...(alder ? [alder.email] : []),
+        ...committeeRecipients,
+      ]);
+      const cc = uniqueEmails([mayorEmail]);
+      return { to, cc };
+    }
+    function ready() {
+      return wardSelect.value && document.querySelector("#name").value.trim() && selectedStatuses().length > 0;
+    }
+    function draftSubject(ward) {
+      return `${ordinal(ward)} Ward constituent: reject the Unfair Ordinance`;
+    }
+    function draftBody() {
+      const ward = Number(wardSelect.value || 0);
+      const alder = byWard[ward];
+      const name = document.querySelector("#name").value.trim() || "[your name]";
+      const statuses = selectedStatuses();
+      const status = statuses.length ? statuses.join(" and ") : "Chicago resident";
+      const address = document.querySelector("#address").value.trim();
+      const personal = document.querySelector("#personal").value.trim();
+      const points = selected();
+      const lines = [];
+      lines.push(`Dear Alderperson ${alder ? surname(alder.name) : ""},`, "");
+      lines.push(`My name is ${name}, and I am a ${status} in the ${ward ? ordinal(ward) : "[your]"} Ward. I am writing to ask you to reject the so-called FAIR Ordinance and support stronger renter protections in the Protecting Renters Ordinance.`);
+      if (personal) lines.push("", personal);
+      points.forEach(key => lines.push("", paragraphs[key]));
+      lines.push("", "Chicago is a renter city. Please do not support a counterproposal that leaves renters with weaker courtroom defenses, no real just-cause protection, and fewer tools to stop displacement.");
+      lines.push("", "Thank you for your time and for representing our ward.", "", name);
+      if (address) lines.push(address);
+      if (ward) lines.push(`${ordinal(ward)} Ward`);
+      return lines.join("\n");
+    }
+    function refresh() {
+      const ward = Number(wardSelect.value || 0);
+      const alder = byWard[ward];
+      const recipients = recipientLists();
+      if (alder) {
+        toBlock.innerHTML = `<b>To:</b> your alderperson and the current Housing and Real Estate Committee members.<br><b>Cc:</b> Mayor Brandon Johnson.`;
+      } else {
+        toBlock.textContent = "Choose your ward to include your own alderperson in the recipient list.";
+      }
+      toEmails.value = recipients.to.join(", ");
+      ccEmails.value = recipients.cc.join(", ");
+      if (ward && !subjectEdited) subject.value = draftSubject(ward);
+      if (!bodyEdited) body.value = draftBody();
+      sendBtn.disabled = !ready();
+      sendNote.textContent = ready()
+        ? "Ready. This opens a draft in your own email app; you review and send it yourself."
+        : "Fill in your ward, name, and at least one identity checkbox to enable the email link.";
+    }
+    document.querySelectorAll("input, select").forEach(el => el.addEventListener("input", refresh));
+    document.querySelectorAll("input, select").forEach(el => el.addEventListener("change", refresh));
+    body.addEventListener("input", () => { bodyEdited = true; });
+    subject.addEventListener("input", () => { subjectEdited = true; });
+    sendBtn.addEventListener("click", () => {
+      const ward = Number(wardSelect.value || 0);
+      if (!ward) return;
+      const recipients = recipientLists();
+      const params = new URLSearchParams({ cc: recipients.cc.join(","), subject: subject.value, body: body.value });
+      window.location.href = `mailto:${recipients.to.map(email => encodeURIComponent(email)).join(",")}?${params.toString().replace(/\+/g, "%20")}`;
+    });
+    document.querySelector("#copyRecipientsBtn").addEventListener("click", async () => {
+      const recipients = recipientLists();
+      const text = `To: ${recipients.to.join(", ")}\nCc: ${recipients.cc.join(", ")}`;
+      try {
+        await navigator.clipboard.writeText(text);
+        document.querySelector("#copyRecipientsBtn").textContent = "Copied recipients";
+        setTimeout(() => { document.querySelector("#copyRecipientsBtn").textContent = "Copy recipients"; }, 1400);
+      } catch {
+        toEmails.focus();
+        toEmails.select();
+      }
+    });
+    document.querySelector("#copyBtn").addEventListener("click", async () => {
+      const recipients = recipientLists();
+      const message = `To: ${recipients.to.join(", ")}\nCc: ${recipients.cc.join(", ")}\nSubject: ${subject.value}\n\n${body.value}`;
+      try {
+        await navigator.clipboard.writeText(message);
+        document.querySelector("#copyBtn").textContent = "Copied";
+        setTimeout(() => { document.querySelector("#copyBtn").textContent = "Copy message"; }, 1400);
+      } catch {
+        body.focus();
+        body.select();
+      }
+    });
+    refresh();
+  </script>
+</body>
+</html>
