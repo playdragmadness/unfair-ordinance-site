@@ -588,13 +588,127 @@
       mark.setAttribute("aria-label", label);
     });
 
-    const paragraphs = {
-      justcause: "The counterproposal expressly preserves at-will non-renewal. Chicago renters need just-cause protections so a family that has paid rent and followed the lease cannot be pushed out without a real reason.",
-      defenses: "The Protecting Renters Ordinance creates clearer eviction defenses and burden rules when a landlord violates notice, cause, or relocation requirements. Those protections should not be stripped out.",
-      relocation: "When tenants are displaced through no fault of their own, relocation assistance can be the difference between a stable move and a housing crisis. Council should keep meaningful relocation protections in the ordinance.",
-      fees: "I also support transparent limits on security deposits, application fees, move-in fees, and other non-rent charges. Renters should know the true cost of a home before they apply or sign.",
-      enforcement: "The RLTO only works when renters can enforce it. Chicago needs stronger public enforcement, public records for repeat violators, and private remedies that are practical to use."
+    // These local banks keep drafts varied without an AI service, account, or network request.
+    const subjectLines = [
+      "Please reject the FAIR Ordinance",
+      "Chicago renters need stronger protections",
+      "Do not weaken Chicago's renter protections",
+      "The FAIR Ordinance would hurt renters",
+      "Protect tenants from an unfair rollback",
+      "Please stand up for Chicago renters",
+      "Keep meaningful protections in Chicago's rental law",
+      "Council should reject the FAIR Ordinance",
+      "Do not take away renter protections",
+      "Chicago needs a stronger renter-protection ordinance",
+      "Please protect tenants from displacement",
+      "The FAIR Ordinance leaves renters behind",
+      "Support the Protecting Renters Ordinance",
+      "Please choose stronger protections for renters",
+      "A request from a Chicago constituent",
+      "Please do not roll back the RLTO's protections",
+      "Renters deserve real protections from displacement",
+      "Reject the counterproposal and protect renters",
+      "Please protect just-cause renter protections",
+      "Keep eviction defenses strong in Chicago",
+      "Chicago renters need enforceable rights",
+      "The counterproposal is not fair to renters",
+      "Please preserve practical tenant remedies",
+      "Do not leave renters with weaker protections",
+      "Support a stronger future for Chicago renters",
+      "Please reject weaker renter protections",
+      "Council should protect tenants facing displacement",
+      "Keep Chicago's rental protections moving forward",
+      "Please oppose the FAIR Ordinance rollback",
+      "Renters need more protection, not less",
+      "Do not strip protections from Chicago tenants",
+      "Please support meaningful eviction defenses",
+      "Stand with renters in our ward",
+      "The FAIR Ordinance would leave important gaps",
+      "Please protect the right to a stable home",
+      "Chicago needs a fairer deal for renters",
+      "Keep just cause and tenant remedies in place",
+      "Please do not make displacement easier",
+      "Protect Chicago's current renter protections",
+      "Please support the stronger renter proposal",
+      "The proposed rollback needs to be rejected",
+      "Please keep real protections in the ordinance",
+      "A constituent request about renter protections",
+      "Do not weaken protections when landlords violate the rules",
+      "Please defend renters' ability to enforce their rights",
+      "The FAIR Ordinance would be a step backward",
+      "Please protect renters facing eviction or displacement",
+      "Choose stronger renter protections for Chicago",
+      "Please reject a proposal that leaves renters exposed",
+      "Chicago's renters need your vote for stronger protections"
+    ];
+    const paragraphVariants = {
+      justcause: [
+        "The FAIR Ordinance would leave renters without a real just-cause requirement for ending or refusing to renew a tenancy. A landlord should have to give a valid reason before forcing a tenant to move.",
+        "Chicago renters need protection from being pushed out without a stated, valid reason. Please support a just-cause standard for ending or refusing to renew a tenancy.",
+        "A family that pays rent and follows its lease should not lose its home simply because a landlord chooses not to renew. The ordinance should require a legitimate reason.",
+        "The proposed FAIR Ordinance does not add meaningful just-cause protection. Please support rules requiring landlords to explain the valid reason for ending or refusing to renew a tenancy.",
+        "Just-cause protection gives renters a basic measure of stability: landlords must have a valid reason before making a tenant move. That protection should be included.",
+        "Tenants should not face non-renewal at the landlord's discretion alone. Please preserve and strengthen a requirement that a landlord provide a real reason.",
+        "Without just cause, even a tenant who has done everything right can be forced to move without an explanation that the law recognizes. Chicago should close that gap.",
+        "Please reject a counterproposal that leaves at-will non-renewal in place. Renters need a valid-reason requirement before a tenancy can be ended or refused renewal.",
+        "Stable housing depends on more than paying rent month to month. The city should require a valid reason before a landlord can end or refuse to renew a tenancy.",
+        "The FAIR Ordinance falls short on just cause. I support a clear rule that landlords must have and provide a valid reason before forcing a tenant to move."
+      ],
+      defenses: [
+        "Renters need clear, enforceable defenses when a landlord violates notice, cause, or relocation rules. The stronger ordinance provides those tools, and the FAIR Ordinance should not remove them.",
+        "A tenant should be able to raise a landlord's violation in court and receive a meaningful remedy. Please protect clear eviction defenses instead of weakening them.",
+        "Rules do not protect renters if they cannot be used when an eviction is filed. Chicago needs clear defenses for violations involving notice, cause, and relocation.",
+        "The proposed counterproposal would leave renters with weaker defenses when landlords do not follow the rules. Please keep the strongest protections available in court.",
+        "Tenants need a fair chance to explain in court when a landlord has failed to follow the required process. Clear eviction defenses are essential to that fairness.",
+        "Please support enforceable defenses that let renters raise notice, cause, or relocation violations in an eviction case. These protections should not be stripped out.",
+        "An eviction process should not ignore a landlord's own violations. Renters need clear defenses and practical remedies when the rules are broken.",
+        "The FAIR Ordinance weakens the protections renters can use in court. I ask you to support the stronger proposal's clear defenses for landlord violations.",
+        "Notice and relocation rules matter only when a renter can rely on them in court. Please preserve meaningful defenses when a landlord fails to comply.",
+        "Chicago renters need more than rights on paper. They need clear eviction defenses that can be raised when a landlord violates the city's rules."
+      ],
+      relocation: [
+        "When a renter is forced to move through no fault of their own, relocation assistance can help prevent a housing crisis. Please support meaningful help with moving costs.",
+        "No-fault displacement can bring sudden moving expenses and instability. The ordinance should include relocation assistance when a tenant is forced to move for reasons unrelated to misconduct.",
+        "Renters should not have to absorb every cost of a move they did not cause. Please keep strong relocation protections for no-fault displacement.",
+        "A tenant who is pushed out through no fault of their own may need help finding and moving into a new home. Chicago should provide meaningful relocation assistance.",
+        "Relocation assistance gives displaced renters a practical bridge to their next home. Please support protections that recognize the real cost of a no-fault move.",
+        "When the landlord's decision forces a responsible tenant to move, the tenant should not be left alone with the moving bill. Please include relocation help.",
+        "No-fault displacement can destabilize families even when they have followed the lease. Strong relocation assistance would make that transition less harmful.",
+        "The FAIR Ordinance leaves out meaningful help for renters forced to move through no fault of their own. Please support a stronger relocation requirement.",
+        "Moving assistance is an important protection when a tenant is required to leave for reasons that are not the tenant's fault. Please keep it in the ordinance.",
+        "Please make sure renters facing a no-fault move have practical relocation support, including help with the costs of finding and moving into another home."
+      ],
+      fees: [
+        "Renters should be able to see the true cost of a home before applying or signing a lease. Please support clear limits and transparency for deposits, application fees, move-in fees, and other charges.",
+        "Upfront housing costs can make a home unaffordable before a tenant even moves in. Chicago should require transparent, reasonable limits on deposits and non-rent fees.",
+        "Security deposits and junk fees should be clear, limited, and connected to actual costs. Renters deserve to know what they will pay at the start of a tenancy.",
+        "Please protect renters from surprise charges. The law should make deposits, application fees, move-in fees, and other non-rent costs transparent and reasonable.",
+        "A rental listing should not hide the real price of moving in. I support stronger limits and disclosure requirements for deposits and additional fees.",
+        "Renters need predictable upfront costs when choosing a home. Please support protections against excessive deposits and unexplained non-rent charges.",
+        "Transparent fee rules help renters compare homes and plan their budgets. Chicago should limit charges that are not tied to an actual housing cost.",
+        "The FAIR Ordinance should not leave renters exposed to confusing or excessive upfront fees. Please support clear disclosures and reasonable limits.",
+        "Before signing a lease, a renter should know the full amount required to move in. Stronger deposit and fee protections would make that possible.",
+        "Please support a rental system where deposits and fees are understandable, limited, and tied to real costs rather than used as hidden charges."
+      ],
+      enforcement: [
+        "The RLTO only works when renters can enforce it. Chicago needs stronger public enforcement, public records for repeat violators, and private remedies that are practical to use.",
+        "Rights on paper are not enough when a renter cannot get a violation addressed. Please support public enforcement, records of repeat violations, and remedies tenants can actually use.",
+        "Chicago should give renters workable ways to enforce the rules. That includes public follow-through, transparency about repeat violations, and meaningful private remedies.",
+        "Please strengthen enforcement so the city's renter protections work in real life, not just in the text of the ordinance. Repeat violations should be visible and actionable.",
+        "A strong ordinance needs staff, public accountability, and remedies that do not require a renter to navigate an impossible process alone. Please support real enforcement tools.",
+        "When violations are repeated, the city should be able to identify them and respond. Renters also need practical ways to seek a remedy for violations affecting them.",
+        "Please support enforcement tools that help the city track repeat violations and help renters obtain relief when their rights are ignored.",
+        "The FAIR Ordinance should not weaken the practical enforcement of renter protections. Chicago needs public records, city follow-through, and usable private remedies.",
+        "Enforcement is what turns a promise into a protection. Please make sure renters have clear public and private paths to address violations.",
+        "Chicago needs renter protections that can be enforced without extraordinary effort. Strong public oversight and practical remedies should be part of the law."
+      ]
     };
+    function randomIndex(length) {
+      return Math.floor(Math.random() * length);
+    }
+    const paragraphChoices = Object.fromEntries(
+      Object.entries(paragraphVariants).map(([key, variants]) => [key, randomIndex(variants.length)])
+    );
     const fields = ["ward", "name", "address", "personal"].map(id => document.querySelector(`#${id}`));
     const subject = document.querySelector("#subject");
     const body = document.querySelector("#body");
@@ -606,6 +720,7 @@
     const sendNote = document.querySelector("#sendNote");
     let bodyEdited = false;
     let subjectEdited = false;
+    let subjectWard = "";
 
     function ordinal(n) {
       const s = ["th", "st", "nd", "rd"], v = n % 100;
@@ -646,7 +761,7 @@
       return wardSelect.value && document.querySelector("#name").value.trim() && selectedStatuses().length > 0;
     }
     function draftSubject(ward) {
-      return `${ordinal(ward)} Ward constituent: reject the Unfair Ordinance`;
+      return subjectLines[randomIndex(subjectLines.length)];
     }
     function draftBody() {
       const ward = Number(wardSelect.value || 0);
@@ -661,7 +776,7 @@
       lines.push(`Dear Alderperson ${alder ? surname(alder.name) : ""},`, "");
       lines.push(`My name is ${name}, and I am a ${status} in the ${ward ? ordinal(ward) : "[your]"} Ward. I am writing to ask you to reject the so-called FAIR Ordinance and support stronger renter protections in the Protecting Renters Ordinance.`);
       if (personal) lines.push("", personal);
-      points.forEach(key => lines.push("", paragraphs[key]));
+      points.forEach(key => lines.push("", paragraphVariants[key][paragraphChoices[key]]));
       lines.push("", "Chicago is a renter city. Please do not support a counterproposal that leaves renters with weaker courtroom defenses, no real just-cause protection, and fewer tools to stop displacement.");
       lines.push("", "Thank you for your time and for representing our ward.", "", name);
       if (address) lines.push(address);
@@ -679,7 +794,10 @@
       }
       toEmails.value = recipients.to.join(", ");
       ccEmails.value = recipients.cc.join(", ");
-      if (ward && !subjectEdited) subject.value = draftSubject(ward);
+      if (ward && !subjectEdited && String(ward) !== subjectWard) {
+        subject.value = draftSubject(ward);
+        subjectWard = String(ward);
+      }
       if (!bodyEdited) body.value = draftBody();
       sendBtn.disabled = !ready();
       gmailBtn.disabled = !ready();
