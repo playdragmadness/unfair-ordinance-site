@@ -100,11 +100,24 @@
       padding: 18px;
     }
     .source h3 { margin: 0 0 8px; font-size: 20px; line-height: 1.1; }
+    .threshold-section {
+      margin: 0 0 36px;
+      padding: 24px;
+      border: 1px solid rgba(215,38,56,.3);
+      border-left: 6px solid var(--red);
+      background: var(--card);
+      box-shadow: var(--shadow);
+    }
+    .threshold-section h2 { margin-bottom: 10px; }
+    .threshold-section p { max-width: 900px; }
+    .threshold-section ul { columns: 2; column-gap: 40px; margin-top: 14px; }
+    .threshold-section li { break-inside: avoid; }
     footer { background: #061624; color: #c6d4df; padding: 30px 0; font-size: 14px; }
     footer p { color: #c6d4df; margin: 0; }
     @media (max-width: 780px) {
       .nav { align-items: flex-start; flex-direction: column; padding: 14px 0; }
       .grid, .source-grid { grid-template-columns: 1fr; }
+      .threshold-section ul { columns: 1; }
       header { padding: 52px 0; }
     }
   </style>
@@ -146,6 +159,23 @@
           <a class="cta secondary" href="index.html#call">Call your alderperson</a>
           <a class="cta outline" href="index.html#stakes">See the comparison</a>
         </div>
+      </section>
+      <section class="threshold-section" aria-labelledby="threshold-heading">
+        <p class="eyebrow">A major coverage change</p>
+        <h2 id="threshold-heading">Why the small-landlord threshold matters</h2>
+        <p>FAIR would broaden the small-landlord exemption to cover landlords with fewer than 12 units. That could place thousands of tenants outside important protections that apply under current law.</p>
+        <p>Those protections include:</p>
+        <ul>
+          <li>Reasonable landlord access rules</li>
+          <li>Fair security-deposit handling</li>
+          <li>Limits on junk and other unfair fees</li>
+          <li>Foreclosure notification requirements</li>
+          <li>Code-violation requirements</li>
+          <li>Remedies when a landlord fails to provide essential services</li>
+          <li>Protections against retaliation</li>
+          <li>Rights when a property is damaged by fire</li>
+          <li>Notice and information requirements</li>
+        </ul>
       </section>
       <div class="grid">
         <article class="card good">
