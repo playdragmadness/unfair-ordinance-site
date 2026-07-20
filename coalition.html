@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coalition | Unfair Ordinance.ORG</title>
+  <meta name="description" content="Organizations in the coalition supporting stronger renter protections in Chicago.">
+  <meta property="og:title" content="Coalition | Unfair Ordinance.ORG">
+  <meta property="og:description" content="Organizations in the coalition supporting stronger renter protections in Chicago.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="public/favicon.svg">
+  <style>
+    .coalition-hero {
+      background: linear-gradient(135deg, rgba(10,31,51,.96), rgba(14,61,91,.86));
+      color: white;
+      padding: 72px 0 58px;
+    }
+    .coalition-hero h1 {
+      max-width: 820px;
+      margin: 0;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: .96;
+      text-transform: uppercase;
+    }
+    .coalition-hero .lede {
+      max-width: 760px;
+      margin: 20px 0 0;
+      color: #d8e6f0;
+      font-size: 20px;
+    }
+    .coalition-main { padding: 58px 0 72px; }
+    .coalition-list {
+      display: grid;
+      gap: 14px;
+      max-width: 820px;
+    }
+    .coalition-member {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 24px;
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--red);
+      background: var(--card);
+      box-shadow: var(--shadow);
+    }
+    .coalition-member h2 {
+      margin: 0;
+      font-size: clamp(20px, 3vw, 28px);
+      line-height: 1.08;
+    }
+    .coalition-member a {
+      flex: 0 0 auto;
+      color: var(--blue-dark);
+      font-weight: 900;
+      text-underline-offset: 3px;
+    }
+    @media (max-width: 560px) {
+      .coalition-hero { padding: 52px 0; }
+      .coalition-member { align-items: flex-start; flex-direction: column; gap: 10px; }
+    }
+  </style>
+  <link rel="stylesheet" href="public/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="top">
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="brand" href="index.html">Unfair Ordinance.ORG</a>
+      <div class="navlinks">
+        <a class="nav-quiet" href="index.html#stakes">What's at stake</a>
+        <a class="nav-quiet" href="education.html">Learn more</a>
+        <a class="nav-action nav-email" href="index.html#email">Email your alder</a>
+        <a class="nav-action nav-call" href="index.html#call">Call your alder</a>
+        <a class="nav-action nav-share" href="share.html">Share on socials</a>
+        <a class="nav-action nav-flyer" href="flyer.html">Shareable flyer</a>
+        <a class="nav-quiet" href="coalition.html" aria-current="page">Coalition</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="coalition-hero">
+    <div class="wrap">
+      <p class="eyebrow">Working together</p>
+      <h1>Coalition</h1>
+      <p class="lede">Organizations working together to support stronger renter protections in Chicago.</p>
+    </div>
+  </header>
+
+  <main id="main-content" class="coalition-main">
+    <div class="wrap">
+      <p class="eyebrow">Coalition members</p>
+      <div class="coalition-list">
+        <article class="coalition-member">
+          <h2>Law Center for Better Housing</h2>
+          <a href="https://lcbh.org/" target="_blank" rel="noopener">Visit website</a>
+        </article>
+        <article class="coalition-member">
+          <h2>Palenque LSNA</h2>
+          <a href="https://www.palenquelsna.org/" target="_blank" rel="noopener">Visit website</a>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Unfair Ordinance.ORG is an independent Chicago renter advocacy site.</p>
+      <p class="footer-meta"><a href="index.html#email">Email your alderperson</a> or <a href="index.html#call">call your alderperson</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
