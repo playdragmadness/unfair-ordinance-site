@@ -22,6 +22,14 @@
       line-height: .96;
       text-transform: uppercase;
     }
+    .coalition-hero .eyebrow {
+      margin-bottom: 12px;
+      color: #d8e6f0;
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 850;
+      letter-spacing: 0;
+      text-transform: none;
+    }
     .coalition-hero .lede {
       max-width: 760px;
       margin: 20px 0 0;
@@ -29,6 +37,15 @@
       font-size: 20px;
     }
     .coalition-main { padding: 58px 0 72px; }
+    .coalition-members-heading {
+      margin: 0 0 22px;
+      color: var(--ink);
+      font-size: 18px;
+      font-weight: 950;
+      letter-spacing: .01em;
+      text-align: center;
+      text-transform: none;
+    }
     .coalition-list {
       display: grid;
       gap: 14px;
@@ -82,7 +99,7 @@
 
   <header class="coalition-hero">
     <div class="wrap">
-      <p class="eyebrow">Working together</p>
+      <p class="eyebrow">Protecting Renters Ordinance</p>
       <h1>Coalition</h1>
       <p class="lede">Organizations working together to support stronger renter protections in Chicago.</p>
     </div>
@@ -90,7 +107,7 @@
 
   <main id="main-content" class="coalition-main">
     <div class="wrap">
-      <p class="eyebrow">Coalition members</p>
+      <p class="coalition-members-heading">Coalition Members</p>
       <div class="coalition-list">
         <article class="coalition-member">
           <h2>Law Center for Better Housing</h2>
@@ -99,6 +116,10 @@
         <article class="coalition-member">
           <h2>Palenque LSNA</h2>
           <a href="https://www.palenquelsna.org/" target="_blank" rel="noopener">Visit website</a>
+        </article>
+        <article class="coalition-member">
+          <h2>Uptown People's Law Center</h2>
+          <a href="https://www.uplcchicago.org/" target="_blank" rel="noopener">Visit website</a>
         </article>
       </div>
     </div>
