@@ -171,6 +171,16 @@ footer p:last-child { margin-bottom: 0; }
 .comparison-intro { margin: -8px 0 24px; }
 .definition-line { margin: 0 0 18px; color: var(--muted); font-size: 15px; }
 .definition-line strong { color: var(--ink); }
+.threshold-callout {
+  margin: 22px 0 24px;
+  padding: 18px 20px;
+  border: 1px solid rgba(215,38,56,.3);
+  border-left: 6px solid var(--red);
+  background: rgba(215,38,56,.06);
+}
+.threshold-callout strong { color: var(--red-dark); }
+.threshold-callout p { margin: 0; color: var(--ink); }
+.threshold-callout p + p { margin-top: 6px; color: var(--muted); font-size: 14px; }
 .takeaway-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
