@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Letter Flyer Content Preview | Unfair Ordinance.org</title>
+  <link rel="stylesheet" href="public/site.css">
+  <style>
+    :root {
+      --preview-ink: #0a1f33;
+      --preview-paper: #ffffff;
+      --preview-line: #c8bda9;
+    }
+    body {
+      min-height: 100vh;
+      padding: 24px;
+      background: #ffffff;
+    }
+    @page { size: Letter; margin: 0; }
+    .preview-heading {
+      width: min(816px, calc(100vw - 48px));
+      margin: 0 auto 16px;
+      color: var(--preview-ink);
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .flyer-sheet {
+      width: min(816px, calc(100vw - 48px));
+      height: min(1056px, calc((100vw - 48px) * 11 / 8.5));
+      aspect-ratio: 8.5 / 11;
+      margin: 0 auto;
+      overflow: hidden;
+      background: var(--preview-paper);
+      box-shadow: 0 12px 36px rgba(10,31,51,.18);
+    }
+    .flyer-inner {
+      --sheet-pad: clamp(20px, 3.2vw, 30px);
+      display: grid;
+      grid-template-rows: auto auto auto auto auto minmax(0, 1fr) auto;
+      gap: clamp(8px, 1.2vw, 12px);
+      width: 100%;
+      height: 100%;
+      padding: var(--sheet-pad);
+    }
+    .flyer-masthead {
+      margin-top: calc(-1 * var(--sheet-pad));
+      margin-right: calc(-1 * var(--sheet-pad));
+      margin-left: calc(-1 * var(--sheet-pad));
+      padding: calc(var(--sheet-pad) + clamp(8px, 1.2vw, 12px)) calc(var(--sheet-pad) + clamp(16px, 3vw, 28px)) clamp(14px, 2.2vw, 20px);
+      border-bottom: 6px solid var(--blue);
+      background: var(--preview-ink);
+      color: white;
+    }
+    .flyer-brand {
+      margin: 0 0 clamp(10px, 1.6vw, 15px);
+      font-size: clamp(12px, 1.6vw, 16px);
+      font-weight: 950;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+    }
+    .flyer-title {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(25px, 4vw, 39px);
+      line-height: .94;
+      letter-spacing: -.02em;
+      text-transform: uppercase;
+    }
+    .flyer-title .accent { color: #ff6373; }
+    .flyer-subtitle {
+      max-width: 760px;
+      margin: clamp(10px, 1.8vw, 16px) 0 0;
+      color: #d8e6f0;
+      font-size: clamp(10px, 1.35vw, 14px);
+      font-weight: 750;
+      line-height: 1.25;
+    }
+    .flyer-definition {
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(8px, 1.05vw, 10.5px);
+      line-height: 1.35;
+    }
+    .flyer-definition strong { color: var(--preview-ink); }
+    .flyer-takeaways {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(8px, 1.4vw, 14px);
+      margin: 0;
+      padding: clamp(9px, 1.5vw, 14px) 0;
+      border-top: 1px solid var(--preview-line);
+      border-bottom: 1px solid var(--preview-line);
+    }
+    .flyer-takeaway {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 7px;
+      align-items: start;
+      min-width: 0;
+    }
+    .takeaway-number {
+      display: grid;
+      place-items: center;
+      width: clamp(20px, 2.8vw, 27px);
+      height: clamp(20px, 2.8vw, 27px);
+      border-radius: 50%;
+      background: var(--preview-ink);
+      color: white;
+      font-size: clamp(9px, 1.1vw, 12px);
+      font-weight: 950;
+    }
+    .flyer-takeaway strong,
+    .flyer-takeaway span { display: block; }
+    .flyer-takeaway strong {
+      margin-bottom: 2px;
+      font-size: clamp(8px, 1.05vw, 11px);
+      line-height: 1.15;
+    }
+    .flyer-takeaway span {
+      color: var(--muted);
+      font-size: clamp(7px, .9vw, 9.5px);
+      line-height: 1.25;
+    }
+    .flyer-takeaway > .takeaway-number {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      color: white;
+      font-size: clamp(9px, 1.1vw, 12px);
+      line-height: 1;
+    }
+    .flyer-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      align-items: center;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(7px, .9vw, 9.5px);
+      font-weight: 800;
+    }
+    .flyer-legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .flyer-mark {
+      display: inline-grid;
+      place-items: center;
+      width: clamp(16px, 2vw, 20px);
+      height: clamp(16px, 2vw, 20px);
+      border-radius: 50%;
+      color: white;
+      font-size: clamp(9px, 1.1vw, 12px);
+      font-weight: 950;
+      line-height: 1;
+    }
+    .flyer-mark.yes { background: var(--green); }
+    .flyer-mark.mixed { background: var(--gold); color: var(--preview-ink); }
+    .flyer-mark.no { background: var(--red); }
+    .flyer-threshold {
+      margin: 0;
+      padding: clamp(9px, 1.5vw, 14px) clamp(11px, 1.8vw, 16px);
+      border: 1px solid rgba(215,38,56,.3);
+      border-left: 5px solid var(--red);
+      background: #fff5f2;
+      color: var(--muted);
+      font-size: clamp(7.5px, .95vw, 10px);
+      line-height: 1.28;
+    }
+    .flyer-threshold strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--red-dark);
+      font-size: clamp(8px, 1.05vw, 11px);
+    }
+    .flyer-table-wrap {
+      min-height: 0;
+      overflow: hidden;
+    }
+    .flyer-table {
+      width: 100%;
+      height: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      background: #ffffff;
+      border: 1px solid var(--preview-line);
+      color: var(--preview-ink);
+      font-size: clamp(7px, .92vw, 9.5px);
+    }
+    .flyer-table th,
+    .flyer-table td {
+      border: 1px solid var(--preview-line);
+      vertical-align: middle;
+    }
+    .flyer-table th {
+      height: 30px;
+      padding: 4px 6px;
+      background: #f2e9d7;
+      font-size: clamp(7px, 1vw, 10px);
+      line-height: 1.1;
+      text-align: center;
+    }
+    .flyer-table th:first-child { text-align: left; }
+    .flyer-table th:first-child,
+    .flyer-table td:first-child { width: 38%; }
+    .flyer-table th:not(:first-child),
+    .flyer-table td:not(:first-child) { width: 20.666%; }
+    .flyer-table td { padding: 3px 6px; text-align: center; }
+    .flyer-table td.feature { text-align: left; }
+    .feature-title {
+      display: block;
+      font-size: clamp(7.5px, 1vw, 10px);
+      font-weight: 950;
+      line-height: 1.04;
+    }
+    .feature-note {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: clamp(6.5px, .82vw, 8.5px);
+      line-height: 1.06;
+    }
+    .cell-mark {
+      display: grid;
+      place-items: center;
+      width: clamp(17px, 2.5vw, 24px);
+      height: clamp(17px, 2.5vw, 24px);
+      margin: 0 auto 3px;
+      border-radius: 50%;
+      color: white;
+      font-size: clamp(9px, 1.2vw, 13px);
+      font-weight: 950;
+      line-height: 1;
+    }
+    .cell-mark.yes { background: var(--green); }
+    .cell-mark.mixed { background: var(--gold); color: var(--preview-ink); }
+    .cell-mark.no { background: var(--red); }
+    .cell-note {
+      display: block;
+      color: var(--muted);
+      font-size: clamp(6.5px, .82vw, 8.5px);
+      font-weight: 800;
+      line-height: 1.1;
+    }
+    .flyer-action-band {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) clamp(64px, 8vw, 74px);
+      gap: clamp(10px, 1.8vw, 16px);
+      min-height: clamp(64px, 8vw, 74px);
+    }
+    .flyer-action-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 0;
+      padding: clamp(8px, 1.1vw, 10px) clamp(12px, 1.8vw, 16px);
+      border-radius: 10px;
+      background: var(--red);
+      color: white;
+    }
+    .flyer-action-kicker {
+      margin: 0 0 2px;
+      color: #ffd7dc;
+      font-size: clamp(6.5px, .8vw, 8px);
+      font-weight: 950;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .flyer-action-copy h2 {
+      margin: 0;
+      font-size: clamp(14px, 1.9vw, 18px);
+      line-height: 1.04;
+      text-transform: uppercase;
+    }
+    .flyer-action-copy h2 .flyer-action-kicker {
+      display: inline;
+      margin: 0;
+      color: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: normal;
+      text-transform: inherit;
+    }
+    .flyer-action-copy p {
+      margin: 3px 0 0;
+      color: white;
+      font-size: clamp(10px, 1.15vw, 11.5px);
+      font-weight: 750;
+      line-height: 1.18;
+    }
+    .flyer-qr-space {
+      display: grid;
+      place-items: center;
+      width: 100%;
+      aspect-ratio: 1;
+      align-self: center;
+      min-width: 0;
+      border: 2px solid var(--preview-ink);
+      border-radius: 8px;
+      background: white;
+      color: var(--muted);
+      font-size: clamp(7px, .9vw, 9px);
+      font-weight: 950;
+      letter-spacing: .08em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    @media (max-width: 640px) {
+      body { padding: 12px; }
+      .preview-heading, .flyer-sheet { width: calc(100vw - 24px); }
+      .flyer-takeaways { gap: 6px; }
+      .flyer-takeaway { grid-template-columns: 1fr; }
+      .takeaway-number { margin-bottom: 2px; }
+      .flyer-table th, .flyer-table td { padding-left: 4px; padding-right: 4px; }
+    }
+    @media print {
+      body { padding: 0; background: white; }
+      .preview-heading { display: none; }
+      .flyer-sheet { width: 8.5in; height: 11in; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <p class="preview-heading">Letter flyer content preview: 8.5 in wide by 11 in tall</p>
+  <main class="flyer-sheet" aria-label="Letter-size flyer content preview">
+    <div class="flyer-inner">
+      <header class="flyer-masthead">
+        <p class="flyer-brand">Unfair Ordinance.org</p>
+        <h1 class="flyer-title">The so-called <span class="accent">FAIR Ordinance</span> is an unfair rollback <span class="accent">for renters.</span></h1>
+        <p class="flyer-subtitle">A proposed law called the “FAIR Ordinance” would roll back renter protections in Chicago.</p>
+      </header>
+
+      <p class="flyer-definition"><strong>RLTO</strong> means the current law, the Residential Landlord Tenant Ordinance. <strong>PRO</strong> means the proposed Protecting Renters Ordinance. The <strong>FAIR Ordinance</strong> is the competing counterproposal.</p>
+
+      <section class="flyer-takeaways" aria-label="Comparison summary">
+        <div class="flyer-takeaway"><span class="takeaway-number">1</span><div><strong>Current RLTO is the floor.</strong><span>It includes some notice and tenant remedies, but no general just-cause requirement.</span></div></div>
+        <div class="flyer-takeaway"><span class="takeaway-number">2</span><div><strong>PRO adds stronger protections.</strong><span>It would add just cause, clearer defenses, relocation help, and enforcement tools.</span></div></div>
+        <div class="flyer-takeaway"><span class="takeaway-number">3</span><div><strong>The FAIR Ordinance falls short.</strong><span>It leaves out or weakens several of the protections renters need most.</span></div></div>
+      </section>
+
+      <div class="flyer-legend" aria-label="Comparison table legend">
+        <span class="flyer-legend-item"><span class="flyer-mark yes">✓</span> Adds or keeps a stronger protection</span>
+        <span class="flyer-legend-item"><span class="flyer-mark mixed">~</span> Limited or partial protection</span>
+        <span class="flyer-legend-item"><span class="flyer-mark no">X</span> Not included or weakened</span>
+      </div>
+
+      <aside class="flyer-threshold">
+        <strong>FAIR would broaden the small-landlord exemption to cover landlords with fewer than 12 units.</strong>
+        That change could place thousands of tenants outside important protections involving access, security deposits, junk fees, foreclosure notices, code violations, essential services, retaliation, fire, and required notices and information.
+      </aside>
+
+      <div class="flyer-table-wrap">
+        <table class="flyer-table" aria-label="Comparison of renter protections">
+          <thead>
+            <tr><th>Protection</th><th>Current RLTO</th><th>Protecting Renters Ordinance</th><th>FAIR Ordinance</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="feature"><span class="feature-title">Just cause to end or refuse renewal of a tenancy</span><span class="feature-note">A landlord must have a valid reason before forcing a move.</span></td><td><span class="cell-mark no">X</span><span class="cell-note">Not required</span></td><td><span class="cell-mark yes">✓</span><span class="cell-note">Adds it</span></td><td><span class="cell-mark no">X</span><span class="cell-note">Leaves it out</span></td></tr>
+            <tr><td class="feature"><span class="feature-title">Clear eviction defenses when a landlord violates the rules</span><span class="feature-note">Tenants can raise notice, cause, or relocation violations in court.</span></td><td><span class="cell-mark mixed">~</span><span class="cell-note">Limited / implied</span></td><td><span class="cell-mark yes">✓</span><span class="cell-note">Strongest</span></td><td><span class="cell-mark no">X</span><span class="cell-note">Removes existing defenses</span></td></tr>
+            <tr><td class="feature"><span class="feature-title">Relocation help for no-fault displacement</span><span class="feature-note">Moving assistance when renters are pushed out through no fault of their own.</span></td><td><span class="cell-mark no">X</span><span class="cell-note">Not required</span></td><td><span class="cell-mark yes">✓</span><span class="cell-note">Adds it</span></td><td><span class="cell-mark no">X</span><span class="cell-note">Leaves it out</span></td></tr>
+            <tr><td class="feature"><span class="feature-title">Tiered notice before rent increases</span><span class="feature-note">Current law requires 30, 60, or 120 days depending on tenancy length.</span></td><td><span class="cell-mark yes">✓</span><span class="cell-note">30 / 60 / 120 days</span></td><td><span class="cell-mark yes">✓</span><span class="cell-note">Strengthens to 120 days</span></td><td><span class="cell-mark mixed">~</span><span class="cell-note">Keeps notice periods but weakens the remedy</span></td></tr>
+            <tr><td class="feature"><span class="feature-title">A remedy when a landlord gives a late non-renewal notice</span><span class="feature-note">Notice only protects a renter when there is a consequence for ignoring it.</span></td><td><span class="cell-mark yes">✓</span><span class="cell-note">Tenant may stay through the required notice period</span></td><td><span class="cell-mark yes">✓</span><span class="cell-note">Keeps protections</span></td><td><span class="cell-mark no">X</span><span class="cell-note">Removes the post-notice remedy</span></td></tr>
+            <tr><td class="feature"><span class="feature-title">Security deposit and junk-fee limits</span><span class="feature-note">Caps and transparency for upfront costs.</span></td><td><span class="cell-mark mixed">~</span><span class="cell-note">Some protections</span></td><td><span class="cell-mark yes">✓</span><span class="cell-note">Stronger</span></td><td><span class="cell-mark mixed">~</span><span class="cell-note">Partial</span></td></tr>
+            <tr><td class="feature"><span class="feature-title">Owner-occupied building exemption</span><span class="feature-note">The RLTO excludes owner-occupied premises with six units or fewer, subject to limited exceptions.</span></td><td><span class="cell-mark yes">✓</span><span class="cell-note">6-unit threshold</span></td><td><span class="cell-mark yes">✓</span><span class="cell-note">Keeps 6-unit threshold</span></td><td><span class="cell-mark no">X</span><span class="cell-note">Fewer than 12 units</span></td></tr>
+            <tr><td class="feature"><span class="feature-title">Citywide rental registry and public enforcement</span><span class="feature-note">A way to track rental units and repeat violations.</span></td><td><span class="cell-mark no">X</span><span class="cell-note">No registry</span></td><td><span class="cell-mark yes">✓</span><span class="cell-note">Adds tools</span></td><td><span class="cell-mark mixed">~</span><span class="cell-note">More limited and unfunded</span></td></tr>
+            <tr><td class="feature"><span class="feature-title">Codify a Chicago eviction-defense program</span><span class="feature-note">Helps renters get legal advice or representation when they are at risk of eviction.</span></td><td><span class="cell-mark no">X</span><span class="cell-note">No dedicated program</span></td><td><span class="cell-mark yes">✓</span><span class="cell-note">Adds eviction-counsel program</span></td><td><span class="cell-mark no">X</span><span class="cell-note">No dedicated program</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <section class="flyer-action-band" aria-label="Take action and QR code area">
+        <div class="flyer-action-copy">
+          <h2><span class="flyer-action-kicker">Take action:</span> Email or call your alderperson.</h2>
+          <p>UnfairOrdinance.org has a tool that makes it easy to email and call your alderperson.</p>
+        </div>
+        <div class="flyer-qr-space" aria-label="Reserved space for QR code">QR code</div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
